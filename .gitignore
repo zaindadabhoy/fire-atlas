@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+.vercel/
+__pycache__/
+*.pyc
+.venv/
+video/footage/
+video/renders/
+video/studio/public/footage/
+video/studio/public/sfx/
+video/studio/public/vo/

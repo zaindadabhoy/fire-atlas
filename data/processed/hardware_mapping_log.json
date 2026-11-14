@@ -1,0 +1,12 @@
+{
+  "suites": [
+    "CIR + ACME",
+    "CIR + MDCA",
+    "MSG + SPICE flow duct",
+    "Saffire on Cygnus",
+    "Smoke / aerosol instruments",
+    "Analysis / modeling (ground)"
+  ],
+  "unmapped_count": 0,
+  "unmapped": []
+}

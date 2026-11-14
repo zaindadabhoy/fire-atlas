@@ -1,0 +1,18 @@
+{
+  "name": "fire-atlas-demo-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts FireAtlasDemo ../renders/fire-atlas-demo.mp4 --codec h264 --crf 16"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.543",
+    "@remotion/media-utils": "^4.0.543",
+    "@types/react": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.543",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "query": {
+    "o2_pct": 21,
+    "pressure_psi": 14.7,
+    "flow_cm_s": null,
+    "material": "PMMA",
+    "phase": "solid",
+    "pillar": null,
+    "habitat_id": "iss",
+    "o2_partial_psi": 3.09
+  },
+  "briefing": {
+    "headline": "112 Solid tests near ISS air; cabin pressure assumed",
+    "sentences": [
+      {
+        "text": "112 Solid tests recorded O₂ near this query, but PSI did not record cabin pressure; 14.7 psi is a cabin-pressure assumption.",
+        "cites": [
+          "coverage:solid"
+        ]
+      },
+      {
+        "text": "The highest measured O₂ concentration in solid-phase tests is 22.2 %.",
+        "cites": [
+          "fact:solid_max_o2"
+        ]
+      },
+      {
+        "text": "Solid-phase tests at 18–25 % O₂ show a 63.6 % burn outcome share.",
+        "cites": [
+          "fact:trend_o2_saffire_18_25"
+        ]
+      },
+      {
+        "text": "PMMA is observed to burn in solid-phase tests at 22.1 % O₂ and 14.7 psi.",
+        "cites": [
+          "fact:material_contrast_psi_99_21"
+        ]
+      },
+      {
+        "text": "No measured solid-phase tests exist within the specified 5 % O₂ and 2 psi window for the ISS.",
+        "cites": [
+          "fact:iss_near_solid"
+        ]
+      }
+    ],
+    "gaps": [
+      "No solid-phase tests exist above 22.2 % O₂."
+    ],
+    "next_tests": [
+      {
+        "material": "PMMA",
+        "o2_pct": 21,
+        "pressure_psi": 14.7,
+        "flow_cm_s": null,
+        "why": "Measure the selected material at the target atmosphere to establish direct Solid coverage.",
+        "cites": [
+          "coverage:solid"
+        ]
+      },
+      {
+        "material": "Silicone",
+        "o2_pct": 21,
+        "pressure_psi": 14.7,
+        "flow_cm_s": 20,
+        "why": "Compare Silicone with PMMA; the cited Solid results include a different reported outcome.",
+        "cites": [
+          "fact:iss_nearest_solid",
+          "fact:material_contrast_psi_99_21"
+        ]
+      }
+    ],
+    "confidence": {
+      "level": "medium",
+      "reason": "The analysis relies on assumed cabin pressure for all solid-phase test data."
+    }
+  },
+  "verification": {
+    "sentences_total": 5,
+    "sentences_kept": 5,
+    "citations_dropped": 0,
+    "numbers_unverified": 0
+  },
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "evidence_pack_hash": "6540b82250c60f27b0d58377d19a142e277d9cee6a2f778b01ca1dc77a1e017e",
+  "generated_at": "2026-11-14T16:56:29.800Z",
+  "cached": true
+}

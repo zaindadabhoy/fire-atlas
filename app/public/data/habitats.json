@@ -1,0 +1,39 @@
+[
+  {
+    "id": "earth-sea-level",
+    "name": "Earth sea level",
+    "o2_pct": 20.9,
+    "pressure_psi": 14.7,
+    "source": "NASA OCHMO-TB-003 (Earth sea-level reference)"
+  },
+  {
+    "id": "iss",
+    "name": "ISS",
+    "o2_pct": 21,
+    "pressure_psi": 14.7,
+    "source": "NASA OCHMO-TB-003: 21% O₂ at 14.7 psia"
+  },
+  {
+    "id": "spacesuit",
+    "name": "Spacesuit",
+    "o2_pct": 100,
+    "pressure_psi": 4.3,
+    "source": "NASA Spacesuits episode: 100% O₂ at 4.3 psi"
+  },
+  {
+    "id": "moon-base",
+    "name": "Moon base / pressurized rover",
+    "o2_pct": 34,
+    "pressure_psi": 8.2,
+    "source": "Space Apps 2026 challenge text: ≥30 % O₂, ≤10.2 psi (example point 34 % / 8.2 psi)",
+    "o2_min_pct": 30,
+    "pressure_max_psi": 10.2
+  },
+  {
+    "id": "apollo-1",
+    "name": "Apollo 1 (pre-launch test)",
+    "o2_pct": 100,
+    "pressure_psi": 16.7,
+    "source": "NASA Apollo 204 Review Board: 100% O₂ at 16.7 psia"
+  }
+]

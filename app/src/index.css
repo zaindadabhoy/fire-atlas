@@ -1,0 +1,22 @@
+:root {
+  color-scheme: dark;
+  font: 13px/1.4 var(--font-body);
+  letter-spacing: normal;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+body { min-width: 320px; min-height: 100vh; margin: 0; background: var(--bg); }
+#root { width: 100%; min-height: 100vh; margin: 0; }
+button,input,select { font: inherit; }

@@ -1,0 +1,104 @@
+{
+  "query": {
+    "o2_pct": 100,
+    "pressure_psi": 16.7,
+    "flow_cm_s": null,
+    "material": "PMMA",
+    "phase": "solid",
+    "pillar": null,
+    "habitat_id": "apollo-1",
+    "o2_partial_psi": 16.7
+  },
+  "briefing": {
+    "headline": "Apollo 1's cabin had 5.44× Earth's O₂ partial pressure; no PSI solid test came within 77.8 points of its O₂.",
+    "sentences": [
+      {
+        "text": "No PSI test-level data exists for the Solid phase in this region, so this briefing is extrapolation.",
+        "cites": [
+          "coverage:solid"
+        ]
+      },
+      {
+        "text": "Apollo 1's cabin O₂ partial pressure was 16.7 psi, which is 5.44× the Earth sea-level reference.",
+        "cites": [
+          "fact:apollo-1_o2_partial_pressure_ratio_vs_earth"
+        ]
+      },
+      {
+        "text": "The highest measured O₂ in solid-phase tests is 22.2 %, leaving a 77.8 percentage point gap to the query.",
+        "cites": [
+          "fact:apollo-1_o2_gap_vs_solid_max"
+        ]
+      },
+      {
+        "text": "All 263 solid-phase tests are restricted to an O₂ range between 13.6 % and 22.2 %.",
+        "cites": [
+          "fact:solid_test_o2_range"
+        ]
+      },
+      {
+        "text": "Material contrasts at 22.1 % O₂ show that PMMA burned, while silicone self-extinguished under identical conditions.",
+        "cites": [
+          "fact:material_contrast_psi_99_21"
+        ]
+      },
+      {
+        "text": "SAFFIRE data indicates that 63.6 % of solid samples burned at 18–25 % O₂.",
+        "cites": [
+          "fact:trend_o2_saffire_18_25"
+        ]
+      }
+    ],
+    "gaps": [
+      "No solid-phase tests exist above 22.2 % O₂."
+    ],
+    "next_tests": [
+      {
+        "material": "PMMA",
+        "o2_pct": 100,
+        "pressure_psi": 16.7,
+        "flow_cm_s": null,
+        "why": "Measure the selected material at the target atmosphere to establish direct Solid coverage.",
+        "cites": [
+          "coverage:solid"
+        ]
+      },
+      {
+        "material": "Silicone",
+        "o2_pct": 100,
+        "pressure_psi": 16.7,
+        "flow_cm_s": 20,
+        "why": "Compare Silicone with PMMA; the cited Solid results include a different reported outcome.",
+        "cites": [
+          "fact:apollo-1_nearest_solid",
+          "fact:material_contrast_psi_99_21"
+        ]
+      },
+      {
+        "material": "PMMA",
+        "o2_pct": 22.2,
+        "pressure_psi": 14.7,
+        "flow_cm_s": null,
+        "why": "Use the nearest Solid source condition as a reference while testing the target atmosphere.",
+        "cites": [
+          "fact:apollo-1_nearest_solid"
+        ]
+      }
+    ],
+    "confidence": {
+      "level": "low",
+      "reason": "The query conditions are significantly outside the range of all available solid-phase test data."
+    }
+  },
+  "verification": {
+    "sentences_total": 6,
+    "sentences_kept": 6,
+    "citations_dropped": 0,
+    "numbers_unverified": 0
+  },
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "evidence_pack_hash": "acfff83b9e43eaa7c992324cb716c043c404a07fe3689532189641849999852f",
+  "generated_at": "2026-11-14T16:57:14.532Z",
+  "cached": true
+}

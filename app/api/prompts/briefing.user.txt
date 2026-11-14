@@ -1,0 +1,4 @@
+Prepare a briefing for the query and only the supporting evidence below. `numeric_values` lists every numeric value that the verifier can accept in sentence text. `allowed_citation_keys` is the complete citation allow-list.
+
+Evidence pack:
+{{EVIDENCE_PACK}}

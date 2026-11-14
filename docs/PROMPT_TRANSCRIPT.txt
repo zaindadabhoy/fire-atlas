@@ -1,0 +1,865 @@
+FIRE ATLAS — SI Prompt Transcript
+
+NASA Space Apps Challenge 2026 · Flame in Freefall.
+Generated 2026-11-15 00:21 from the project repository (tools/build_transcript.py).
+
+How SI was used
+- Team: directed the project and made the scope, design and feature decisions.
+- Developer agent (ChatGPT): implemented the data pipeline and web app from the task prompts below, verbatim.
+- Claude (Claude Code): drafted these prompts under team direction, reviewed and tested each result, and made the final QA fixes and UI polish directly in code (those edits were not prompted to the developer agent and so do not appear below).
+- Runtime SI (Gemini / Groq): writes cited fire-risk briefings and interprets plain-English questions inside the app; its system prompts are listed at the end.
+
+---
+
+Part 1 — Standing instructions given to the developer agent
+
+AGENTS.md
+
+Rules for the SI worker (read before every task)
+
+You are the developer on this project. A reviewer (Claude) reads your work after every task, tests it, and writes your next prompt. Follow these rules exactly.
+
+Before you start
+1. Read PROJECT_BRIEF.md (what we build, stack, deadlines).
+2. Read the task file you were given in prompts/ (e.g. prompts/01-....md).
+3. Read the latest file in reviews/ if one exists — it lists fixes required before new work.
+4. For any UI work, read design/UI_SPEC.md and follow it exactly. A UI task is not done until its §5 checklist passes. Allowed UI packages: motion, lucide-react (plus what the brief already lists). Ask before adding anything else.
+
+Boundaries
+- Work only inside: pipeline/, app/, data/, docs/ (only SI_USAGE.md, REFERENCES.md, DATA_DICTIONARY.md), and worklog/.
+- Never touch: video/, prompts/, reviews/, design/, PROJECT_BRIEF.md, AGENTS.md, .env.
+- Do not change the tech stack in the brief. If you think it must change, say so in your report and stop.
+- Never put API keys in code or in committed files. Read them from environment variables; .env is gitignored.
+- Do not invent data. If a value is missing in PSI, keep it null and record why. Every derived number must be traceable to investigation id + source file + row.
+- Do not delete raw downloads in data/raw/; they are our audit trail.
+- Keep downloaded files out of code folders. Run Python scripts from the project root, e.g. python pipeline/harvest.py.
+
+Git
+- Do not run any git commands (no commit, add, reset, checkout, push). The reviewer handles all git and GitHub work after reviewing your task.
+
+When you finish a task, write a report
+Create worklog/NN-report.md (NN = task number) containing:
+1. Done — what you built, file by file.
+2. How to run — exact commands.
+3. Verification — commands you ran and their real output (trimmed). If something failed, show it.
+4. Data findings — anything surprising in PSI data (missing columns, odd units, broken files).
+5. Not done / known issues — be honest; partial work is fine if it is labeled.
+6. Questions for the reviewer.
+
+Keep the chat answer short: say the task is done and point to the report.
+
+design/UI_SPEC.md
+
+FIRE ATLAS — UI Spec (mandatory for every UI change)
+
+The dashboard must look like a real NASA-adjacent engineering instrument, not an AI-generated template. Judges have seen a hundred "AI dashboards" today. Ours should feel like software a flight-safety engineer would actually use, and the motion should feel like a mission display booting up.
+
+Reference feel: mission-control consoles, Bloomberg terminal density, Linear/Vercel restraint, scientific instrument panels, F1 telemetry overlays. Not a SaaS landing page.
+
+---
+
+1. Banned (instant "AI slop" signals) — never ship these
+- Purple/blue/pink gradients, gradient text, glowing gradient borders.
+- Sparkle ✨ / magic-wand / robot icons, "AI-powered" badges, emoji anywhere in the UI.
+- Glassmorphism blur panels everywhere; heavy drop shadows; everything border-radius: 16px+.
+- Big centered hero with a slogan. Marketing copy ("Unlock insights", "Revolutionize", "Seamlessly").
+- Generic stat cards with a big number + tiny green "↑ 12%".
+- Lorem ipsum, fake numbers, placeholder avatars. Every number on screen comes from data.
+- Default Plotly look (modebar, default fonts, default colorbar, white hover boxes).
+- Spinners. Use skeleton lines or a text status ("Loading condition space…").
+- Random animation for decoration (bouncing, floating, pulsing everything).
+
+2. Visual system
+
+Color (already in tokens.css — extend, don't replace)
+- Surfaces: --bg #05070d, --panel #0b1020, --panel-2 #0f1528 (raised), --line #1c2540, --line-strong #2a3558.
+- Text: --text #e6ecff, --muted #7d8bb3, --faint #4a5578.
+- Color carries meaning only. Outcome: burned #ff5a1f, self-extinguished #ffc542, no ignition #3fa7ff, unknown #5b6478. Alert/extrapolating #ff2d55. Moon #c9b6ff. Nothing else gets a saturated color. One accent (flame orange) for the primary action only.
+
+Type
+- Space Grotesk 600 for panel titles only. Inter for body. JetBrains Mono for every number, unit, ID, citation, and label tag.
+- Scale (px): 11 (labels, uppercase, letter-spacing 0.08em) · 13 (body) · 15 (emphasis) · 20 (panel title) · 32 (one hero metric max). No other sizes.
+- Numbers: font-variant-numeric: tabular-nums. Always show units in muted color: 34.0 %.
+
+Layout & density
+- 8 px grid. Panel padding 16. Gaps 12. Radius 6 px max (4 px for tags/inputs).
+- Panels are separated by 1 px --line hairlines, not shadows.
+- Every panel has a header row: small mono index (01), uppercase label, and a right-aligned status (READY / 234 TESTS / EXTRAPOLATING).
+- Information density is a feature: compact rows (28–32 px), aligned columns, no wasted whitespace. But the atlas gets the space: ≥ 70% width on desktop.
+- Small corner tick marks / crosshair details on the atlas frame (instrument feel) — subtle, 1 px, --line-strong.
+
+Components
+- Tags: mono 11 px, 1 px border, 4 px radius, e.g. MEASURED ASSUMED FROM RANGE QUIESCENT. Assumed = dashed border.
+- Citation chip: [PSI-25 · B3] mono, underline on hover, click → selects the point on the atlas and opens its test card.
+- Inputs: dark fields, 1 px border, focus = accent border + no glow. Units inside the field, right-aligned, muted.
+- Buttons: primary = solid flame orange, dark text, no gradient. Secondary = outline. Icon library: lucide-react only, 16 px, stroke 1.5.
+- Tables: mono numbers right-aligned, zebra off, hover row --panel-2.
+- Empty states: one honest line + what to do ("No tests match these filters. Clear outcome filter.").
+
+The Atlas (hero) — Plotly styling
+- displayModeBar: false; transparent paper_bgcolor/plot_bgcolor; grid --line; axis titles mono 11 px muted; tick labels mono.
+- Custom HTML hover/tooltip (or Plotly hoverlabel with bgcolor --panel-2, border --line-strong, mono font) — never default white.
+- Markers: size 5–7, opacity 0.85, no outline; selected point = larger + white ring; hovered investigation = others dim to 0.15.
+- Habitat markers: diamonds, white 1.5 px outline, label in mono uppercase with a thin leader line.
+- Slow idle camera orbit (≈ 1 rotation / 60 s) when the user hasn't interacted for 8 s; stops on any interaction.
+
+3. Motion (use motion — the Framer Motion package — for React; CSS for simple hovers)
+Motion must communicate, not decorate. Timing tokens:
+- fast 120ms (hover, press) · base 220ms (panels, drawer) · slow 600ms (data reveals). Easing cubic-bezier(0.2, 0.8, 0.2, 1).
+- Boot sequence (first load only, ≤ 1.8 s total, skippable by any click): hairline frame draws in → panel headers type in (mono) → status lines tick ("PSI INDEX · 25 INVESTIGATIONS", "TESTS · 1,xxx") → atlas points fade/scale in by investigation in a stagger (40 ms per group). Real counts only.
+- Number changes: count-up/down over 400 ms (tabular nums so nothing jitters).
+- Habitat selection: camera eases to the habitat marker (Plotly relayout of scene.camera animated over ~800 ms), a ring pulses once around it, and a one-line readout slides in.
+- Extrapolating state: the panel border shifts to --alert, a 1 px scanline sweeps once across the atlas, status reads EXTRAPOLATING — NO PSI TESTS IN THIS REGION. Once, not looping.
+- SI briefing: text streams in sentence by sentence; each citation chip appears as its sentence completes, and the cited point pings on the atlas.
+- Drawer/test card: slides up 220 ms; content stagger 30 ms per row.
+- Respect prefers-reduced-motion: disable boot sequence, orbit, and sweeps.
+
+4. Copy voice
+Engineering, short, factual. "34 % O₂ at 8.2 psi. 0 solid-material tests within range." Not "Our AI found amazing insights!". Label assumptions plainly. Use "SI" (not "AI") in user-facing text, per the challenge.
+
+5. Quality bar checklist (verify before reporting a UI task done)
+- [ ] No item from §1 present.
+- [ ] Every visible number traces to data; units shown.
+- [ ] Works at 1440, 1280, 768, 375 px widths without horizontal scroll.
+- [ ] Keyboard focus visible; all controls reachable by Tab; color is never the only signal (shape/label too).
+- [ ] No console errors; Lighthouse performance on desktop ≥ 80.
+- [ ] Screenshots at 1440 px and 375 px saved to worklog/screens/NN-*.png and referenced in the report.
+
+---
+
+Part 2 — Task prompts (in order)
+
+Task 01 — 01-harvest-and-scaffold.md
+
+Launch message:
+
+text
+Read AGENTS.md, then do the task in prompts/01-harvest-and-scaffold.md. When finished, write worklog/01-report.md. Do not run any git commands.
+
+
+Task prompt:
+
+Task 01 — Harvest all PSI combustion data + scaffold the app
+
+Read AGENTS.md and PROJECT_BRIEF.md first. This task has two independent parts. Do Part A first.
+
+---
+
+Part A — PSI harvester (pipeline/harvest.py)
+
+Goal: download everything we might need from PSI once, so the rest of the project never depends on the live API.
+
+A1. Discover investigations
+- Query the search endpoint with each of these terms: combustion, flame, fire, smoke, droplet, flammability, soot, aerosol.
+  https://psi.nasa.gov/geode-py/ws/repo/search?term=<term>&source=psi&type=investigation
+- Response is Elasticsearch-shaped: hits.hits[]._source, ID in _source["Accession"] (e.g. PSI-26). Check whether results are paginated (total vs returned count); if total > returned, find the paging params (try size/from, page) and fetch all.
+- Deduplicate by Accession. Keep the _source of each hit (it has Research Area, SubResearch Area, Acronym, Flight Platform, Experiment Hardware, dates, etc.).
+- Keep only investigations whose Research Area / SubResearch Area / title / keywords relate to combustion or fire (smoke/aerosol detection like SAME, SAME-R, DAFT counts). Log the ones you drop and why to data/raw/excluded.json. When unsure, keep it.
+
+A2. Fetch details
+- For each kept ID: https://psi.nasa.gov/geode-py/ws/repo/investigations/<ID> → save as data/raw/investigations/<ID>.json (pretty-printed, untouched).
+
+A3. Download experimental tables
+- Each detail JSON has experimentalTable (list, may be null/empty). Each entry has file_name.
+- Download: GET https://psi.nasa.gov/geode-py/ws/studies/<ID>/download?file=<urlencoded file_name>&version=1&redirect=false → the body is a plain-text signed S3 URL. GET that URL to get the file bytes.
+- Save to data/raw/tables/<ID>/<file_name> (keep original name). Some may be .xlsx — save as-is.
+- Also look in the detail JSON for any other data-file lists (inspect keys; e.g. files, dataFiles, resources). Don't download large binaries (video/images > 5 MB) — just record them in the manifest.
+
+A4. Manifest + inventory
+Write data/raw/manifest.json: one entry per investigation:
+json
+{ "id": "PSI-25", "acronym": "BASS-II", "title": "...", "doi": "...", "hardware": "...",
+  "research_area": "...", "sub_research_area": "...", "start_date": "...", "end_date": "...",
+  "related": ["PSI-26"], "tables": [{"file": "...", "path": "data/raw/tables/PSI-25/...", "rows": 129, "bytes": 16590}],
+  "other_files": [ ... ], "errors": [] }
+
+Write data/raw/INVENTORY.md — a human-readable report, this is the most important output of Part A:
+- A table: ID | acronym | title | #tables | total rows | DOI.
+- For each table file: the exact header row (all column names, verbatim) and the first 3 data rows. Note encoding issues (BOM, weird spaces, multi-line headers, merged header rows).
+- A "columns of interest" summary: for each table, which columns look like O₂ concentration, pressure, flow/air speed, fuel/material, sample geometry (thickness/diameter/width/length), and outcome (ignition, extinction, burn time, self-extinguished). Just identify them — do not normalize yet (that's Task 02).
+
+A5. Robustness
+- Use requests with a 30 s timeout, 3 retries with backoff, a polite 0.3 s delay between requests, and a plain User-Agent fire-atlas-hackathon/0.1.
+- Re-running must be safe: skip files already downloaded (add --force to re-download).
+- Read CSVs with encoding="utf-8-sig" and fall back to latin-1.
+- Add pipeline/requirements.txt (requests, pandas, openpyxl).
+
+---
+
+Part B — App scaffold (app/)
+
+Goal: a running Vite + React + TypeScript app with the layout and visual identity in place, using placeholder data, so Task 02's real data can drop in.
+
+B1. Setup
+- npm create vite@latest (React + TS) into app/. Dependencies: react-plotly.js, plotly.js-dist-min, and types. No UI kit, no Tailwind.
+- Scripts: npm run dev, npm run build must both work.
+
+B2. Layout (single page, desktop-first but must not break at 375 px width)
+
+┌──────────────────────────────────────────────────────────────┐
+│ FIRE ATLAS  · Microgravity fire data for crewed habitats  [About] │
+├───────────────┬──────────────────────────────────────────────┤
+│ LEFT PANEL    │                                              │
+│ Habitat Check │            ATLAS (Plotly 3D scatter)         │
+│ - preset      │      x: O₂ %   y: pressure (psi)  z: flow    │
+│ - O₂ / psi    │      toggle 3D / 2D                          │
+│ - material    │                                              │
+│ - flow        │                                              │
+│ [Run check]   │                                              │
+├───────────────┴──────────────────────────────────────────────┤
+│ BOTTOM DRAWER: briefing / selected test card / citations      │
+└──────────────────────────────────────────────────────────────┘
+
+B3. Visual identity ("mission control at night")
+- CSS variables in src/styles/tokens.css: background near-black blue #05070d, panels #0b1020, hairline borders #1c2540, text #e6ecff, muted #7d8bb3.
+- Outcome colors: burned #ff5a1f (flame orange), self-extinguished #ffc542 (amber), no ignition #3fa7ff (cool blue), unknown #5b6478.
+- Habitat markers: large diamond markers with labels, white outline; Moon base in #c9b6ff, Apollo 1 in red #ff2d55.
+- Fonts from Google Fonts: Space Grotesk (headings), Inter (body), JetBrains Mono (numbers/citations).
+- Plotly: transparent background, dark grid lines, no Plotly modebar logo, smooth camera. Points should glow slightly (marker opacity 0.85, line width 0).
+
+B4. Placeholder data
+- app/public/data/tests.sample.json: ~40 fake points clearly marked "placeholder": true, spread over O₂ 15–100 %, pressure 4–17 psi, flow 0–40 cm/s, mixed outcomes.
+- app/public/data/habitats.json: the presets from the brief's table (include a "source" field for each; Mars = "assumption").
+- Type definitions in src/types.ts for TestPoint, Habitat, Investigation — design TestPoint to match this shape (Task 02 will produce it):
+ts
+type Outcome = "burned" | "self_extinguished" | "no_ignition" | "unknown";
+interface TestPoint {
+  id: string;                 // "PSI-25:B3"
+  investigation: string;      // "PSI-25"
+  test_label: string;         // "B3"
+  fuel_phase: "solid" | "liquid" | "gas" | null;
+  material: string | null;
+  o2_pct: number | null;
+  pressure_psi: number | null;
+  flow_cm_s: number | null;
+  outcome: Outcome;
+  source: { file: string; row: number }; // row = 1-based data row in the raw file
+  extra: Record<string, string | number | null>;
+}
+
+- Clicking a point fills the bottom drawer with its fields. Selecting a habitat preset moves/highlights its marker.
+- The "Run check" button can just show "SI briefing coming in Task 03" for now.
+
+---
+
+Done when
+- [ ] python pipeline/harvest.py runs end-to-end from the project root; data/raw/manifest.json and data/raw/INVENTORY.md exist and cover every combustion investigation found.
+- [ ] cd app && npm run build succeeds with no TypeScript errors.
+- [ ] npm run dev shows the layout with the 3D atlas, placeholder points, habitat markers, and click-to-inspect.
+- [ ] docs/REFERENCES.md lists every package you added.
+- [ ] worklog/01-report.md written per AGENTS.md. (Do not commit — the reviewer does git.)
+
+Task 02 — 02-normalize-and-real-atlas.md
+
+Launch message:
+
+text
+Read AGENTS.md and reviews/01-review.md, then do prompts/02-normalize-and-real-atlas.md. Fix F1–F5 first. Write worklog/02-report.md when done. Do not run any git commands.
+
+
+Review the agent was told to read first (reviews/01-review.md):
+
+Review — Task 01 (harvest + scaffold)
+
+Verdict: accepted. Harvest is complete (25 investigations, 22 tables, 2,009 rows, 0 errors), build passes, app renders with no console errors. Good work, and the honest data-findings section was exactly what was needed.
+
+Answers to your questions
+1. Excluded 11 — keep them out. But excluded.json lost the metadata: every entry shows title: None. Fix (see below).
+2. PSI-98 F1C1/F2C1 rows — yes, exclude from test points (they are flow-visualization references, not burns). Record the skip in the normalization log.
+
+Required fixes (do these first in Task 02)
+- F1 excluded.json: store title, acronym, research_area for each excluded item so a human can audit the exclusion.
+- F2 Plotly modebar overlaps the in-chart legend (top right). Hide the modebar entirely (displayModeBar: false) — we have our own controls.
+- F3 Two legends are shown (inside the chart and under it). Keep only the one under the chart.
+- F4 Habitat labels collide (Earth sea level and ISS sit on the same spot). When two habitats are within ~1 unit, merge into one label "Earth sea level · ISS".
+- F5 Bundle: load Plotly with React.lazy + dynamic import so the shell paints instantly and the atlas shows a short "loading condition space…" state.
+
+Notes (no action)
+- Visual identity is on target. Keep it.
+
+Task prompt:
+
+Task 02 — Normalize PSI tables into one dataset + put real data on the Atlas
+
+Read AGENTS.md, PROJECT_BRIEF.md, and reviews/01-review.md (do fixes F1–F5 first).
+
+This is the most important task for the Validity score. Judges must be able to click any point and trace it to a raw file and row. Rule of thumb: a value we did not read from PSI is either null or explicitly flagged as assumed. Never silently fill.
+
+---
+
+Part A — pipeline/normalize.py
+
+Reads data/raw/ only (no network). Writes:
+- data/processed/tests.json and a copy at app/public/data/tests.json
+- data/processed/envelopes.json → app/public/data/envelopes.json
+- data/processed/investigations.json → app/public/data/investigations.json
+- data/processed/normalize_log.md (what was mapped, skipped, flagged — counts per table)
+- docs/DATA_DICTIONARY.md (every output field: meaning, unit, how derived)
+
+Structure the code as one small adapter function per table (adapt_psi_159_normal(df) -> list[TestPoint] etc.) plus shared helpers. A table with no adapter goes to the log as "not normalized" — that's fine.
+
+A1. Output schema — TestPoint (extends the Task 01 type; update src/types.ts to match)
+jsonc
+{
+  "id": "PSI-159:normal:21088A1",       // investigation:table_key:test label (unique)
+  "investigation": "PSI-159",
+  "acronym": "CFI-G",
+  "table_key": "normal",
+  "test_label": "21088A1",
+  "fuel_phase": "gas",                   // solid | liquid | gas
+  "configuration": "normal_flame",       // see per-table rules
+  "material": "ethane",                  // fuel or sample material, cleaned text
+  "o2_pct": 39.39,                       // percent, 0–100
+  "pressure_psi": 13.70,                 // absolute psi
+  "o2_partial_psi": 5.40,                // o2_pct/100 * pressure_psi (derived, null if either is null)
+  "flow_cm_s": 0,                        // ambient/forced flow past the flame or sample
+  "diluent": "N2",                       // N2 | He | CO2 | mixed | null
+  "outcome": "self_extinguished",        // burned | self_extinguished | no_ignition | unknown
+  "outcome_raw": "Hot ignition=Yes; Self-ext or flow term=SE",
+  "metrics": { "burn_time_s": 50, "tad_k": 2719.3, "peak_burner_t_c": 290.6 },
+  "quality": {                           // provenance of each key value
+    "o2_pct": "measured",                // measured | from_range | assumed | null
+    "pressure_psi": "measured",
+    "flow_cm_s": "quiescent_chamber"     // measured | quiescent_chamber | assumed | null
+  },
+  "assumptions": [],                     // human-readable strings when anything is assumed
+  "source": { "file": "PSI-159_Experimental table_CFI-G_Normal Flames.csv", "row": 1 },
+  "doi": "10.60555/cyt1-kh64"
+}
+
+Unit conversions (put them in one units.py): 1 atm = 14.6959 psi; 1 bar = 14.5038 psi; 1 mmHg = 0.0193368 psi. Mole fraction → percent ×100. Round to 2 decimals only in output.
+
+A2. Per-table rules (headers are verbatim from INVENTORY — strip whitespace, case-insensitive match)
+
+| Table | fuel_phase / configuration | O₂ | Pressure | Flow | Outcome |
+|---|---|---|---|---|---|
+| PSI-159 CFI-G Normal | gas / normal_flame (spherical burner, fuel out, O₂ ambient) | XO2 before test ×100 | approx p (bar) | 0, quiescent_chamber | Hot ignition=No → no_ignition; Yes + Self-ext or flow term=SE → self_extinguished; Yes + FT → burned (flame sustained until flow cut); else unknown |
+| PSI-159 CFI-G Inverse | gas / inverse_flame (O₂ issues from burner into fuel ambient — the challenge's 85 % O₂ tests) | XO2 ×100 (this is the burner O₂, not ambient — note in assumptions-free extra, and set configuration so the UI can explain) | approx p (bar) | 0, quiescent_chamber | same rule as Normal |
+| PSI-10 Flame Design Normal | gas / normal_flame | XO2 (init) ×100 | pmean (atm) | 0, quiescent_chamber | burned (these are established flames); rows where key values are RAMPED → keep, outcome burned, add assumption "ramped flow test"; non-numeric → null |
+| PSI-10 Flame Design Inverse | gas / inverse_flame | XO2 ×100 | pmean (atm) | 0, quiescent_chamber | burned |
+| PSI-69 FLEX | liquid / droplet | O initial ambient composition; mole fraction ×100 (column is O₂ — header lost subscript) | Ambient pressure; mmHg | 0, quiescent_chamber | map Test end: dump all unique values to the log first. Extinction → self_extinguished; ignition failure-like values → no_ignition; Disruption / burnout / anything where the droplet burned to the end → burned; unclear → unknown and list it. Diluent: He if He fraction>0, CO2 if CO fraction>0 (that column is CO₂), else N2 |
+| PSI-39 CFI | liquid / droplet | Oxygen ×100 | Pressure (parse "1 atm", "0.5 atm", etc.) | 0, quiescent_chamber | unknown unless a column states it (check all columns, not just the 10 in the inventory preview) ; diluent He if Helium>0 |
+| PSI-25 BASS-II | solid / thin_sample (parse thickness from Fuel Sample Material, e.g. "100 micron PMMA film 2 cm wide" → material "PMMA", thickness_um 100, width_cm 2) | Calibrated initial O2 % by vol | not in table → 14.7, quality assumed, assumption "MSG at ISS cabin pressure (~14.7 psi); not recorded in table" | not in cm/s — Fan display is a setting. Set flow_cm_s: null, keep fan_display in metrics | unknown (table has no outcome column). Put O₂ drop (initial − final) and CO rise in metrics — these are evidence of burning but do not convert them into an outcome |
+| PSI-26 BASS | solid | null | assumed 14.7 as above | null | unknown; material + geometry parsed from Fuel Sample Material ("PMMA sphere 2 cm") |
+| PSI-98/99/100 SAFFIRE I/II/III | solid / large_sample | Percent O2 parse "~ 21.5" / "21.5 - 21.7" (range → midpoint, quality from_range); SAFFIRE-III has none → null | not in table → 14.7 assumed ("Cygnus cabin, not recorded") | Air Flow parse number (cm/s) — measured | burned if Burn Time numeric >0 or burn length/spread present; SAFFIRE-II "Insignificant" burn → self_extinguished; else unknown. Skip PSI-98 F1C1/F2C1 rows. Keep Flow Direction (concurrent/opposed) in metrics |
+| PSI-107 SPICE | gas / coflow_jet | 20.9, quality assumed ("ISS cabin air in MSG") | 14.7 assumed | Air Rate (cm/s) measured | burned. Many rows repeat one test (same ignition time) — collapse rows with identical (date, ignition time, fuel, nozzle, fuel rate, air rate) into one point; keep row count in metrics |
+| PSI-102 SAME, PSI-101 SAME-R, PSI-47 DAFT | — | — | — | — | Not combustion points. Output them to a separate detection.json (smoke/dust detection tests: material, flow, metrics) — used later by the "detection" panel |
+| PSI-20 BRE, PSI-21 CLD, PSI-22 E-FIELD, PSI-23 s-Flame, PSI-68 FLEX-2, PSI-106 SLICE, PSI-142 | — | — | — | — | Rows are per-day summaries or ranges, not single tests → write to envelopes.json (below), not tests.json |
+
+A3. envelopes.json (ranges/summaries)
+jsonc
+{ "id": "PSI-20:row3", "investigation": "PSI-20", "acronym": "ACME BRE",
+  "fuel_phase": "gas", "material": "C2H4",
+  "o2_pct_values": [26.5, 34],        // parsed lists "21; 26.5; 40"
+  "o2_pct_range": [26.5, 34],
+  "pressure_psi_values": [...], "flow_cm_s_range": [0.1, 5],
+  "count": 8,                          // e.g. "Flames Ignited"
+  "note": "...", "source": {...}, "doi": "..." }
+
+For FLEX-2 parse "0.17; 0.21;0.25; 0…" lists and "1.5 - 5" ranges. For SLICE parse "40% CH4 (balance N2)". Missing → null.
+
+A4. investigations.json (one per PSI ID, all 25 — even those with no table)
+From the raw detail JSON: id, acronym, title, doi, psi_url, objective, approach, hypothesis, research_impacts, hardware, start_date, end_date, related, publications_count, plus computed: n_tests, n_envelopes, fuel_phases, o2_range, pressure_range_psi, flow_range_cm_s, and a rule-based safety_tags list from keywords in title/objective/impacts:
+- prevention (flammability, flame spread, ignition, material, extinction limit, oxygen)
+- detection (smoke, aerosol, particulate, soot, detector)
+- suppression (extinguish, suppressant, CO2, helium, dilution, FLEX)
+Strip HTML from text fields. Keep text ≤ 1,200 chars per field (trimmed at a sentence end).
+
+A5. Validation script pipeline/validate.py (must pass, prints a summary)
+- every test has source.file that exists and source.row ≥ 1 within that file's row count;
+- 0 ≤ o2_pct ≤ 100, 0 < pressure_psi < 40, flow_cm_s ≥ 0 when not null;
+- ids are unique;
+- re-read 20 random tests from the raw CSV and assert the O₂/pressure values match after conversion (spot-check — print them);
+- prints counts: tests by investigation × outcome, and % of tests with each quality flag.
+
+---
+
+Part B — Real data on the Atlas
+
+1. Load tests.json, envelopes.json, investigations.json, habitats.json. Remove the placeholder file and the "DEMO DATA" badge.
+2. Axes: default 3D = O₂ % (x), pressure psi (y), flow cm/s (z). Add an axis toggle for y: pressure | O₂ partial pressure. Points with null on a plotted axis are not drawn — show a small counter "N tests hidden (missing value on this axis)".
+3. Markers: color by outcome (tokens from Task 01). Shape by fuel phase (circle = gas, diamond = liquid droplet, square = solid). Points whose plotted values include an assumed quality → hollow marker (open symbol) — add a legend entry "hollow = value assumed, see test card".
+4. Envelopes: draw each envelope as a translucent line/segment across its O₂ range at its pressure (low opacity, investigation color), toggleable "Show ranges".
+5. Filters panel (compact, above or beside the chart): investigation multi-select (acronyms), fuel phase, outcome. Counts update live.
+6. Test card (bottom drawer, on point click): investigation acronym + title, test label, material, configuration (human sentence, e.g. "Inverse flame: oxygen flows out of the burner into a fuel-rich chamber"), O₂ / pressure / O₂ partial / flow with their quality flag as a small tag, outcome + outcome_raw, metrics table, assumptions, and a source line: PSI-159 · CFI-G_Normal Flames.csv · row 1 + DOI link + PSI page link.
+7. Habitat marker hover/click: show O₂ %, pressure, O₂ partial pressure, and "N PSI tests within ±5 % O₂ and ±2 psi" (simple count from loaded data).
+8. Keep the dark visual identity; make the atlas fill more of the viewport (at least 70 % width on desktop).
+
+---
+
+Done when
+- [ ] F1–F5 from the review are fixed.
+- [ ] python pipeline/normalize.py && python pipeline/validate.py runs clean from the project root; validate output pasted in the report.
+- [ ] normalize_log.md lists every table: adapter used, rows in, points out, rows skipped (with reason), outcome mapping table for FLEX Test end values.
+- [ ] docs/DATA_DICTIONARY.md written.
+- [ ] Atlas shows the real points with filters, hollow-assumed markers, envelopes, test card with source line; npm run build passes; no console errors.
+- [ ] worklog/02-report.md written (include: number of points per investigation, and any mapping you were unsure about). No git commands.
+
+Task 03 — 03-si-briefing-and-ranking.md
+
+Launch message:
+
+text
+Read AGENTS.md, design/UI_SPEC.md and reviews/02-review.md, then do prompts/03-si-briefing-and-ranking.md. Fix R1–R6 first. Write worklog/03-report.md when done. Do not run any git commands.
+
+
+Review the agent was told to read first (reviews/02-review.md):
+
+Review — Task 02 (normalization + real atlas)
+
+Verdict: accepted with fixes. Excellent work on traceability: 1,719 points, 20/20 raw spot-checks, honest null reasons, burner-vs-ambient O₂ semantics recorded. The parser bug you caught (O₂ subscript read as "200") is exactly the kind of thing that would have embarrassed us in front of judges.
+
+Key finding confirmed by the reviewer (we will build the story on this)
+- 263 solid-material tests (BASS, BASS-II, SAFFIRE I–III). Max O₂ = 22.2 %, and all at ~14.7 psi (assumed cabin).
+- The Moon base preset (34 % O₂ / 8.2 psi) has 30 PSI tests nearby — all gaseous flames (CFI-G, Flame Design). Zero solid, zero droplet.
+- Liquid droplets reach 34 % O₂ and ~7–10 psi (FLEX) — the nearest non-gas evidence.
+This must be computed by the pipeline (not hard-coded) — see Task 03 Part A.
+
+Answers to your questions
+1. FLEX mapping — confirmed: Completion, Disruption → burned; Extinction → self_extinguished.
+2. Out-of-range values — negative flow: keep as you did (null on axis, raw in metrics). Pressure: the 40 psi bound was my mistake. Values of 44–48 psi (≈3 atm) and 73.5 psi (≈5 atm) are real elevated-pressure tests. Raise the plot bound to 120 psi and plot them. Keep 0.00 psi as null (instrument artifact) with its reason.
+
+Required fixes (do first in Task 03)
+- R1 — bug: SAFFIRE-I/II airflow lost. Raw Air Flow (cm/s) is 20 (PSI-98) and 20 cm/s (PSI-99) for every sample, but normalized flow_cm_s is null with reason "blank or has no numeric speed" — the reason is false. Fix the parser/column match; all 11 SAFFIRE-I/II points must have flow_cm_s = 20, quality measured.
+  Add a validator rule: *if the raw source cell for a mapped field is non-empty and contains a digit, the normalized value must not be null unless the reason says why it was rejected (not "blank").* Run it for O₂, pressure, flow.
+- R2 — 2D view must be O₂ vs pressure (the guide's core question: "≥30 % O₂ at ≤10.2 psi"). Make 2D O₂ × pressure the default landing view. 3D stays as a toggle with flow on the z-axis using log10(1 + flow) scaling, ticks labeled in real cm/s (0, 1, 3, 10, 30, 100).
+- R3 — SPICE dominates the view. 435 SPICE points all sit at assumed 20.9 % / 14.7 psi and form a spike. Points whose plotted coordinates are assumed → hollow and opacity 0.35, drawn beneath measured points. Add a toggle "Include assumed values" (default ON).
+- R4 — Investigation filter: investigations with 0 test points must not appear as selectable filters with "· 0". List them in a muted "No test-level data (summaries/models only)" group. Replace native checkboxes with toggle chips per design/UI_SPEC.md §2 Components.
+- R5 — Habitat labels still collide in 3D (Moon base / Earth · ISS). Offset labels with thin leader lines, or show labels only for the selected habitat + on hover for the others.
+- R6 — Note only: PSI-99 thickness 037 mm is a source typo (likely 0.37). Keep raw, add a source_warnings entry; do not "correct" it.
+
+Task prompt:
+
+Task 03 — Findings engine, investigation ranking, and the cited SI briefing
+
+Read AGENTS.md, PROJECT_BRIEF.md (note the new features 4–5 and the "Coverage of the official Challenge Guide" table), design/UI_SPEC.md, and reviews/02-review.md — do fixes R1–R6 first.
+
+This task makes the "SI-powered" part of the challenge real. The design principle: deterministic code computes every fact; the SI only explains facts it was given, and a verifier rejects anything it can't back up. That is our answer to "how do we trust SI with safety data?" — and judges will ask.
+
+---
+
+Part A — Findings engine (pipeline/findings.py, deterministic, no SI)
+
+Writes data/processed/findings.json → copy to app/public/data/findings.json. Run after normalize.py; add it to the documented pipeline order.
+
+A1. Coverage per habitat preset
+For each habitat in habitats.json with non-null O₂ and pressure, and for each fuel phase (solid, liquid, gas):
+- n_near: tests within a window of ±5 % O₂ (absolute) and ±2 psi, counting only measured values on both axes, and separately n_near_incl_assumed.
+- nearest: the 8 nearest tests by normalized distance d = sqrt(((ΔO₂)/10)² + ((Δp)/3)²) (ids + distance).
+- coverage: "covered" if n_near ≥ 5, "sparse" if 1–4, "none" if 0.
+- max_o2_tested and min_pressure_tested for that phase (measured only), with the test id that holds each extreme.
+
+A2. Global headline facts (computed, each with supporting ids)
+jsonc
+{ "id": "solid_max_o2", "value": 22.2, "unit": "%", "support": ["PSI-25:..."],
+  "text": "Highest O₂ in any solid-material test: 22.2 %." }
+
+Produce at least: total tests / investigations; tests per phase; max O₂ per phase; min pressure per phase; count of solid tests above 25 % O₂ (expected 0); count of tests within each habitat window per phase; FLEX suppression facts (number of tests with He or CO₂ diluent, outcome split); detection records count (SAME/SAME-R/DAFT). Every fact carries support ids so the UI can cite it.
+
+A3. Investigation ranking (deterministic score)
+Function rank_investigations(habitat, phase_filter=None, pillar=None) implemented in TypeScript in the app (src/lib/rank.ts) using tests.json + investigations.json, and mirrored in Python for precompute. Score 0–100, shown with its breakdown:
+- 45 % condition proximity: share of the investigation's tests within the habitat window (or exp(-d_min) if none inside).
+- 25 % fuel-phase match with the selected material's phase.
+- 20 % safety-pillar match (prevention / detection / suppression tags; if a pillar filter is set).
+- 10 % data richness: log-scaled number of measured test points.
+Investigations with no test points can still rank via pillar/phase (proximity = 0). Return the top 8 with {id, acronym, score, breakdown, reason_facts[]}.
+
+---
+
+Part B — SI layer (app/api/)
+
+B1. Provider chain (app/api/_lib/llm.ts)
+- One function generateJSON(system, user) → {json, provider, model}.
+- Order: Gemini GEMINI_MODEL → Gemini GEMINI_FALLBACK_MODEL → Groq GROQ_MODEL. All model names and keys from env vars (see .env.example). Plain fetch, no SDKs.
+  - Gemini: POST https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent, header x-goog-api-key, body {systemInstruction:{parts:[{text}]}, contents:[{role:"user",parts:[{text}]}], generationConfig:{temperature:0.2, responseMimeType:"application/json"}}.
+  - Groq: OpenAI-compatible POST https://api.groq.com/openai/v1/chat/completions, response_format:{type:"json_object"}, temperature 0.2.
+- On 429/500/503 or invalid JSON: retry once after 1.5 s, then fall to the next provider. Timeout 25 s per call. Log which provider answered (no keys in logs).
+
+B2. Evidence pack (app/api/_lib/evidence.ts)
+Built server-side from the JSON data files for a query {o2_pct, pressure_psi, flow_cm_s?, material?, phase?, habitat_id?}:
+- query + derived O₂ partial pressure;
+- coverage per phase (Part A logic, reuse/port it);
+- up to 12 nearest tests (id, acronym, material, phase, O₂, p, flow, outcome, quality flags);
+- top 5 ranked investigations with title, safety_tags, and objective trimmed to 400 chars;
+- relevant global facts from findings.json.
+Each item has a citation key: test ids (PSI-25:...), investigation ids (PSI-25), fact ids (fact:solid_max_o2).
+
+B3. Briefing prompt — store as files (they go into our submission transcript)
+app/api/prompts/briefing.system.txt. Write it carefully; it must instruct the model to:
+- act as a spacecraft fire-safety analyst writing for engineers;
+- use only the evidence pack; never introduce numbers that are not in it;
+- cite every sentence with one or more citation keys from the pack;
+- state coverage honestly: if the query's phase has coverage none, the first sentence must say no PSI test-level data exists for that phase in this region and that the briefing is extrapolation;
+- distinguish burner/inverse-flame O₂ from ambient O₂ when citing CFI-G/Flame Design inverse tests;
+- structure: headline (≤ 20 words), sentences[] (4–7 items, each {text, cites[]}), gaps[] (what's missing, 1–3), next_tests[] (1–3 suggested experiments, each with O₂/pressure/material/flow fields drawn from the gap), confidence (low|medium|high + 1-line reason);
+- output strict JSON matching that schema, nothing else.
+Also app/api/prompts/briefing.user.txt as the template that injects the evidence pack.
+
+B4. Verifier (app/api/_lib/verify.ts) — this is a feature, show it in the UI
+After the model answers:
+- drop any citation key not present in the evidence pack; drop any sentence left with zero valid citations;
+- extract numbers from each sentence (regex incl. decimals and %); every number must appear (±0.05 tolerance) in the evidence pack values; otherwise mark the sentence unverified: true (keep it but render it muted with a warning tag);
+- return {briefing, verification:{sentences_total, sentences_kept, citations_dropped, numbers_unverified}, provider, model, evidence_pack_hash}.
+
+B5. Endpoint app/api/briefing.ts (Vercel serverless, Node runtime)
+POST {query} → evidence → LLM → verify → JSON. Input validation (numbers in range). Per-IP soft rate limit (in-memory, 10/min) — fine for a demo.
+For local dev, add a small Vite plugin in vite.config.ts that mounts the same handler at /api/briefing (loading .env from the project root via loadEnv) so npm run dev works without Vercel.
+
+B6. Precomputed briefings (demo must never depend on a free tier)
+app/scripts/precompute-briefings.ts (run with npx tsx): for each habitat preset × default material phase (Moon base → solid; Spacesuit → solid; Apollo 1 → solid; ISS/Earth → solid; also Moon base → liquid), call the same pipeline and write app/public/data/briefings/<habitat>-<phase>.json. The app shows the cached briefing instantly for presets ("cached · generated <time> by <model>"), and calls the API only for custom inputs, falling back to "SI unavailable — showing computed facts only" (still render coverage + ranking) if every provider fails.
+
+---
+
+Part C — UI (follow design/UI_SPEC.md strictly)
+
+1. Left panel → "Habitat check": preset select, O₂ %, pressure, flow, and material select (not free text): grouped options built from tests.json materials by phase (e.g. Solid: PMMA, SIBAL fabric, Nomex, Silicone, Cotton-fiberglass…; Liquid: heptane, methanol, …; Gas: ethylene, methane, …) plus "Other solid / Other liquid / Other gas". Primary button "Run check".
+2. Coverage strip right under the inputs (always visible, updates live without SI): three rows Solid / Droplet / Gas with n_near, a coverage tag (COVERED / SPARSE / NONE), and max O₂ tested for that phase. If the selected phase is NONE → the extrapolating state from UI_SPEC §3 (red border, one-time scanline over the atlas, status text).
+3. Briefing panel (bottom drawer gets a tab "Briefing"; test card becomes tab "Test"): headline; sentences revealed one by one (UI_SPEC motion); each citation is a chip → clicking a test chip selects and highlights the point on the atlas (camera/zoom to it), an investigation chip opens it in the ranking list, a fact chip shows the fact text. Show gaps, next_tests (compact table), confidence, and a footer: Verified 6/6 sentences · 0 citations dropped · provider gemini-3.5-flash · cached. Unverified sentences: muted + UNVERIFIED tag.
+4. Ranked investigations list (right side of the drawer or a collapsible column): rank, acronym, score bar, pillar tags, and an expandable score breakdown. Pillar filter chips: Prevention / Detection / Suppression.
+5. Headline facts ticker in the header status area: cycles 3–4 facts from findings.json every 6 s (e.g. "SOLID TESTS · MAX O₂ 22.2 %"), each clickable to cite. Real values only.
+
+---
+
+Done when
+- [ ] R1–R6 fixed; validator has the new non-empty-raw rule; SAFFIRE-I/II flows = 20 cm/s.
+- [ ] python pipeline/normalize.py && python pipeline/findings.py && python pipeline/validate.py clean; paste the headline facts (A2) in the report.
+- [ ] npm run dev → Run check on Moon base + PMMA returns a cited briefing via the local /api/briefing; paste the raw JSON response (trimmed) and the verification summary in the report.
+- [ ] Kill the keys (temporarily unset env) and confirm the app degrades to cached / computed-facts mode without errors.
+- [ ] Precomputed briefings exist for all presets listed in B6.
+- [ ] npm run build passes; no console errors; UI_SPEC §5 checklist done with screenshots in worklog/screens/03-*.png.
+- [ ] docs/SI_USAGE.md updated (runtime SI section: provider chain, evidence pack, verifier).
+- [ ] worklog/03-report.md written. No git commands.
+
+Task 04 — 04-insight-story-compare-export.md
+
+Launch message:
+
+text
+Read AGENTS.md, design/UI_SPEC.md and reviews/03-review.md, then do prompts/04-insight-story-compare-export.md. Fix S1–S5 first, then Parts A–E in priority order. Write worklog/04-report.md when done. Do not run any git commands.
+
+
+Review the agent was told to read first (reviews/03-review.md):
+
+Review — Task 03 (findings, ranking, cited SI briefing)
+
+Verdict: accepted with fixes. The architecture is right: deterministic findings → evidence pack → LLM → verifier, provider chain with computed fallback, cached presets, Lighthouse 100. Reviewer re-ran the pipeline (clean) and a live /api/briefing call (Nomex, 30 % / 10.2 psi → Gemini, 4/4 verified). R1–R6 confirmed fixed.
+
+The problems now are content quality and storytelling, not plumbing.
+
+Answers to your questions
+1. CFI-G normal-flame O₂ is NOT unspecified. In a *normal* flame the fuel issues from the burner into the chamber atmosphere, so XO2 before test is the ambient chamber O₂. Only *inverse* flames (CFI-G Inverse, Flame Design Inverse) have burner-stream O₂. Set extra.o2_semantics = "ambient" for all normal-flame tables (PSI-159 normal, PSI-10 normal) and "burner_stream" for inverse; the briefing must never say O₂ semantics are "unspecified" for these.
+2. Chunk-size warning: ignore it. Lighthouse 100 is what matters.
+
+Required fixes (do first in Task 04)
+- S1 — Fonts never load (visible bug). No Google Fonts link and no font files exist; every heading renders in Arial. Self-host with @fontsource/space-grotesk, @fontsource/inter, @fontsource/jetbrains-mono (approved packages; import only the weights used: 400/500/600). Verify with document.fonts that all three are loaded.
+- S2 — O₂ semantics per answer 1 (normalize + evidence pack + any UI text).
+- S3 — Coverage tiers are misleading for Earth/ISS. Solids show NONE at ISS conditions even though BASS/SAFFIRE ran in ISS-cabin air (pressure just wasn't recorded). Use four tiers: COVERED (≥5 measured), COVERED · ASSUMED P (≥5 when assumed cabin pressure is included, shown with dashed tag), SPARSE (1–4), NONE. The extrapolating state triggers only on NONE.
+- S4 — Briefing content is shallow. Live output was four restatements of "no data" plus commentary about data fields. See Task 04 Part A for the richer evidence and prompt rules.
+- S5 — Lowercase/uppercase inconsistency in phase labels ("solid", "Droplet", "gas"). Use Solid / Droplet / Gas everywhere.
+
+Task prompt:
+
+Task 04 — Sharper SI insights, a chart that tells the story, Compare + Export
+
+Read AGENTS.md, PROJECT_BRIEF.md, design/UI_SPEC.md, and reviews/03-review.md — do S1–S5 first.
+
+Feature freeze is tomorrow 12:00. After this task the product must be demo-complete. Priority order if time runs short: Part A → Part B → Part C → Part D → Part E.
+
+---
+
+Part A — Briefings that say something an engineer can use
+
+A1. New deterministic "insight facts" in pipeline/findings.py (each with support ids)
+1. O₂ partial-pressure comparison per habitat: pO2 = O₂% × P. Earth = 3.07 psi; Moon base (34 % × 8.2) = 2.79 psi. Fact text pattern: "Moon base O₂ partial pressure is 2.79 psi, 9 % below Earth's 3.07 psi, while O₂ mole fraction is 63 % higher." (Compute the percentages; do not hard-code.)
+2. Nearest evidence per phase outside the window: for each habitat × phase, the single nearest measured test (or nearest assumed if no measured), with its O₂, pressure, distance, and the O₂ gap (e.g. "nearest solid evidence is 11.8 percentage points lower in O₂").
+3. Material contrasts at matched conditions: within one investigation, groups of tests at the same O₂ (±0.5) and flow where different materials had different outcomes. SAFFIRE-II is the key one (≈22 % O₂, 20 cm/s: silicone self-extinguished, SIBAL cotton-fiberglass and PMMA burned). Emit generically, not as a SAFFIRE special case.
+4. Outcome trends by O₂ bin where outcomes are known (FLEX, CFI-G normal, CFI-G inverse, SAFFIRE): bins <18, 18–25, 25–35, 35–50, >50 %; per bin n, share burned / self-extinguished / no-ignition. Only emit bins with n ≥ 5. Also FLEX by diluent (N₂ vs He vs CO₂) — extinction share.
+5. Pressure trend for FLEX and CFI-G: same idea with pressure bins <9, 9–12, 12–16, >16 psi.
+6. Investigation context snippets: from each investigation's research_impacts / objective, one ≤ 300-char extract (sentence boundary), citable by PSI id — for qualitative context only.
+
+A2. Evidence pack
+Include: coverage (with the S3 tiers), the nearest-evidence facts, relevant trend bins (for the query's phase first, then neighbours), material contrasts, pO₂ comparison, top 5 ranked investigations with context snippets. Keep the pack ≤ 6k tokens.
+
+A3. Rewrite app/api/prompts/briefing.system.txt — add these rules
+- Headline is a finding, not a title. Bad: "Fire safety analysis for PMMA at Moon base". Good: "No solid material in PSI has burned above 22.2 % O₂ — the Moon base runs at 34 %."
+- At most one sentence about coverage/missing data. Every other sentence must state an engineering implication: material selection, ventilation/airflow, detection, suppression, or what test is needed — grounded in the cited trend/contrast facts.
+- Never comment on data fields, columns, semantics, or the dataset's format. (No "the XO2 field represents…".)
+- Use comparisons: higher/lower than Earth, nearest evidence gap, trend direction across O₂ bins.
+- When using droplet or gas evidence for a solid question, say explicitly that it is *indirect* evidence.
+- 5–7 sentences. next_tests: 2–3 distinct tests (vary material, O₂, pressure, flow), each with a one-line why citing a gap fact.
+- Terminology: say "SI" never "AI".
+
+A4. Provider check
+Log why gemini-3.5-flash fell back to the lite model in your runs (status code). If 3.5-flash fails consistently, keep the chain as is — but regenerate all cached briefings after A3 and include them in the report; reject and regenerate any cache whose headline is a title instead of a finding.
+
+---
+
+Part B — The Atlas must show the gap at a glance
+
+1. Default view = "Habitat range": 2D, x 10–105 % O₂, y 0–22 psi. A toggle Habitat range | Full range (full = autorange incl. elevated-pressure tests). Points outside the current range: show a small "N tests above 22 psi" counter.
+2. Region overlays (Plotly shapes, behind points, no gradients):
+   - "Planned lunar habitat envelope": rectangle O₂ ≥ 30 % (to the axis max), P ≤ 10.2 psi. Fill --moon at 8 % opacity, 1 px dashed --moon border, mono label inside top-left: LUNAR HABITAT ENVELOPE · ≥30% O₂ · ≤10.2 psi (source: challenge text — add to REFERENCES).
+   - "Solid materials tested": band covering the measured solid O₂ range (min → 22.2 %) at the assumed cabin pressure (14.7 psi, ±0.4 psi band height). Fill solid-orange at 10 %, label: ALL 263 SOLID TESTS · 13.6–22.2 % O₂ (compute numbers from findings).
+   - The empty space between these two regions is the story — don't clutter it.
+3. Habitat markers: all presets visible with small mono labels, collision-avoided with offsets and thin leader lines; Apollo 1 (100 %, 16.7) and Spacesuit (100 %, 4.3) fully inside the plot (x max 105).
+4. Story mode button (top right of the atlas, secondary style): a 4-step guided sequence that animates the view (camera/range + highlight + one-line caption, ~3 s each, Next/Back/Esc):
+   1. "1,719 microgravity combustion tests from 25 NASA PSI investigations."
+   2. Highlight solids (others dim to 0.15): "Every solid-material test: 13.6–22.2 % O₂, cabin pressure."
+   3. Move to Moon preset, envelope pulses once: "Planned lunar habitats: ≥30 % O₂ at ≤10.2 psi. Zero solid tests here."
+   4. Open the cached Moon-base briefing with citations pinging: "The SI briefing — every sentence cited and verified."
+   All captions use computed numbers. This sequence will be screen-recorded for the demo video, so make it smooth (no layout shift, 60 fps target).
+
+---
+
+Part C — Compare view (official objective: cross-investigation comparisons)
+
+New top-level tab next to the Atlas: Atlas | Compare | Data.
+1. Investigation table (all 25): acronym, title, hardware suite, fuel phase(s), O₂ range, pressure range, flow range, # tests, outcome types measured, safety pillars, years. Sortable, sticky header, mono numbers.
+2. Select 2–3 → side-by-side cards: objective (trimmed), hardware, sample/fuel geometry, conditions covered (mini range bars on shared O₂ and pressure scales, so ranges are visually comparable), outcomes measured, sensors/measurements (extract from approach/experimentHardware text by keyword: camera, radiometer, thermocouple, gas analyzer, smoke/aerosol instrument; show "not stated" if none), DOI links. A short "Same / Different" list computed deterministically (shared hardware, overlapping O₂ range, same phase…).
+3. Hardware × fuel-phase matrix: rows = hardware suites (CIR + ACME, CIR + MDCA, MSG + SPICE flow duct, Saffire on Cygnus, other), columns = Gas / Droplet / Solid / Detection; cells list investigation acronyms. Derive hardware suite from experimentHardware + title keywords; put the mapping table in pipeline/ and log unmapped items.
+
+Part D — Data tab: Export (official objective: predictive data extraction)
+- Shows current filter summary + row count, preview of first 10 rows (mono table).
+- Buttons: Download CSV, Download JSON of the currently filtered tests, flattened columns: all TestPoint fields + quality_* + source_file, source_row, doi. File name fire-atlas-tests-<filter-hash>.csv.
+- A "Data dictionary" link (render docs/DATA_DICTIONARY.md content or link to it in the repo) and a "How to cite" box listing the DOIs of investigations in the export.
+
+Part E — Boot sequence & motion (UI_SPEC §3)
+Implement the first-load boot sequence (≤1.8 s, skippable, reduced-motion aware) and the habitat-selection camera ease if not already done. Verify the briefing sentence-reveal and citation ping work.
+
+---
+
+Done when
+- [ ] S1–S5 fixed; fonts verified loaded.
+- [ ] normalize → findings → validate clean; paste the new insight facts (A1) in the report.
+- [ ] Fresh live briefings for Moon base + PMMA and Apollo 1 + Nomex: paste full JSON (trimmed whitespace). Headlines must be findings.
+- [ ] Atlas default shows both regions, all habitats readable; Story mode runs end to end without layout shift.
+- [ ] Compare tab (table, side-by-side, matrix) and Data tab (CSV/JSON download verified by opening the file) work.
+- [ ] npm run build passes, no console errors, UI_SPEC §5 checklist, screenshots worklog/screens/04-*.png (atlas default, story step 3, compare, data, 375 px).
+- [ ] docs/SI_USAGE.md, docs/REFERENCES.md, docs/DATA_DICTIONARY.md updated.
+- [ ] worklog/04-report.md written. No git commands.
+
+Task 05 — 05-final-fixes-and-deploy-ready.md
+
+Launch message:
+
+text
+Read AGENTS.md, design/UI_SPEC.md and reviews/04-review.md, then do prompts/05-final-fixes-and-deploy-ready.md. Fix T1–T8 first (T1 and T2 are critical). Write worklog/05-report.md when done. Do not run any git commands.
+
+
+Review the agent was told to read first (reviews/04-review.md):
+
+Review — Task 04 (insights, story, compare, export)
+
+Verdict: accepted with fixes. Large, solid delivery: fonts load, 94 traced facts, both regions on the atlas, story mode, compare, export (CSV/JSON verified), boot sequence. The trend facts are genuinely useful (e.g. FLEX burned share 7.6 % below 18 % O₂ → 93.3 % at 25–35 % O₂).
+
+The remaining problems are what a judge would notice in the first 30 seconds. This is the final development task — after it, feature freeze.
+
+Answers to your questions
+1. Hardware mapping: no — use the explicit mapping in fix T5 (from the official challenge text).
+2. Mobile Lighthouse: no further work. Desktop 86 is fine.
+
+Required fixes
+- T1 — The SI never wrote a single cached briefing (critical). All 6 caches are provider: computed. This breaks our "SI-powered" claim. Causes found by reviewer:
+  - gemini-3.5-flash → 429 (free daily quota exhausted by iteration; resets ~13:00 PKT tomorrow — too late).
+  - gemini-3.1-flash-lite → works now (200). gemini-flash-lite-latest → works (200).
+  - Groq → 413: free-tier limit is 8,000 tokens/minute; our pack + prompt is larger.
+  Fix: chain = GEMINI_MODEL → GEMINI_FALLBACK_MODEL → gemini-flash-lite-latest (add GEMINI_FALLBACK_MODEL_2, read from env with that default) → Groq with a compact evidence pack (≤ 3,500 tokens: top 6 tests, top 3 investigations, ≤ 12 facts; max_tokens 1,200).
+  - Verifier: drop invalid sentences, don't discard the whole SI answer. Fall back to computed only if fewer than 4 valid sentences remain.
+  - Regenerate all 6 caches; every cache must be SI-written (provider ≠ computed). Space calls 8 s apart. Report provider/model per file.
+- T2 — Computed fallback text reads like a template. Fix the phrasing generator: no "22.1–22.1 %" (collapse equal ranges to one value), no "FLEX reports: The research impacts … are significant and multifaceted; use that investigation context…" (drop the context-snippet sentence from computed briefings entirely), no repeated "close this condition gap". Earth/ISS headlines are wrong ("0 Solid tests support…"): with the COVERED · ASSUMED P tier the headline must say solids *were* tested near cabin air (e.g. "125 solid tests near ISS air, cabin pressure assumed").
+- T3 — Atlas solid band label is misplaced. "ALL 263 SOLID TESTS · 13.6–22.2 % O₂" sits at x≈40–50 %, over CFI-G points — anchor it above the band, left-aligned at x = 13.6, and make the band visibly filled (solid-orange 12 %, 1 px border).
+- T4 — Story mode steps 2–3 must keep non-solid points dimmed (opacity 0.12) so the empty lunar envelope reads as empty for solids. Step 3: envelope border pulses once and a caption line points into it. Step 4 must show an SI-written cached briefing (after T1).
+- T5 — Hardware mapping (use exactly; from the challenge text):
+  - CIR + ACME: ACME BRE (PSI-20), CLD Flame (PSI-21), E-FIELD Flames (PSI-22), s-Flame (PSI-23), Flame Design (PSI-10), CFI-G (PSI-159).
+  - CIR + MDCA: FLEX (PSI-69), FLEX-2 (PSI-68), CFI (PSI-39).
+  - MSG + SPICE flow duct: BASS (PSI-26), BASS-II (PSI-25), SPICE (PSI-107), SLICE (PSI-106).
+  - Saffire on Cygnus: SAFFIRE-I/II/III (PSI-98/99/100).
+  - Smoke / aerosol instruments: SAME (PSI-102), SAME-R (PSI-101), DAFT/DAFT-2 (PSI-47), ASE (PSI-179).
+  - Analysis / modeling (ground): PSI-60, PSI-62, PSI-115, PSI-117, PSI-142 — show "uses data from <related investigation acronyms>" from related.
+- T6 — Compare table polish: default sort # tests desc; fill fuel phase and O₂/pressure ranges for summary-only investigations from envelopes.json (label "summary range"); display 14.7 psi (assumed) instead of "14.7–14.7 psi", quiescent instead of "0.0–0.0 cm/s", single values when min = max. CFI-G safety pillars must include prevention (hyperoxia flammability) — check the tagging keywords.
+- T7 — Ranking oddity: for a *solid* query FLEX (droplet) ranks #1. Multiply proximity by a phase factor (same phase 1.0, other phase 0.4) so same-phase investigations lead; keep the breakdown visible.
+- T8 — Next-test table: the why column is truncated; wrap text.
+
+Task prompt:
+
+Task 05 — Final fixes, deploy-ready, About page (last development task)
+
+Read AGENTS.md, PROJECT_BRIEF.md, design/UI_SPEC.md, and reviews/04-review.md. Feature freeze follows this task, so no new features beyond this list. Order: Part A → B → C → D.
+
+Part A — Review fixes T1–T8
+Do every item in reviews/04-review.md. T1 (SI-written caches) and T2 (computed text quality) come first.
+
+Part B — Deploy-ready for Vercel (the reviewer deploys; you prepare)
+The Vercel project root will be app/.
+1. Serverless data access: app/api/* must not depend on reading public/ from disk at runtime unless the files are bundled. Use static JSON imports (import tests from "../public/data/tests.json" with resolveJsonModule) or a vercel.json functions["api//*.ts"].includeFiles entry covering public/data/ and api/prompts/. Choose one and prove it by running npx vercel build locally (no login needed for build with --yes? if it requires login, instead run npm run build plus a Node script that imports the handler from the compiled output and calls it with a mock request — paste output).
+2. app/vercel.json: framework vite, output dist, Node 20+ runtime for api/, SPA fallback rewrite for non-API routes.
+3. Env vars the deployment needs (names only) listed in the report: GEMINI_API_KEY, GEMINI_MODEL, GEMINI_FALLBACK_MODEL, GEMINI_FALLBACK_MODEL_2, GROQ_API_KEY, GROQ_MODEL.
+4. If every provider fails in production, the UI must still look intentional (cached preset or computed briefing with the honest status line) — test with keys unset against the production build (npm run preview + the dev API shim is fine).
+5. Remove dev-only files from the app bundle; keep worklog/*.mjs checks where they are.
+
+Part C — About panel (the "About" button) — judges will open it
+A clean modal/page (UI_SPEC styling, no marketing copy) with sections:
+1. What this is — 2 sentences.
+2. The finding — the computed headline facts (solid max O₂, Moon envelope coverage), with citation chips.
+3. Method — a small diagram built with HTML/CSS (no image): PSI API → harvest (25 investigations, 22 tables) → normalize (1,719 tests, provenance per value) → findings engine (deterministic) → evidence pack → SI (Gemini/Groq) → verifier → briefing. Numbers from data.
+4. How to read the atlas — marker shapes, colors, hollow = assumed, regions.
+5. Limitations — honest bullets: no partial-gravity data in PSI; solid-test pressures not recorded (assumed cabin); burner-stream vs ambient O₂; outcome shares are descriptive, not risk probabilities; SI briefings are decision support, not certification.
+6. Data & credits — PSI DOIs list (link to the Data tab "How to cite"), libraries, "SI tools used: Gemini, Groq (runtime)". Team line placeholder: Team: <TEAM NAME> (the reviewer fills it in).
+
+Part D — Earth applications strip (small, in About or under Compare)
+3 compact rows, each linking a PSI pillar to a terrestrial use with the NASA Spinoff source link already in docs/REFERENCES.md: suppression (FLEX → fine-water-mist / gaseous suppression), detection (SAME/SAME-R → smoke/aerosol detection), protection (spinoff: firefighter air tanks & protective gear). Plus one line on oxygen-enriched hospital rooms as an Earth analogue of the lunar-habitat question (state it as context, no numbers we don't have).
+
+Done when
+- [ ] T1–T8 done; report lists each cache file with provider/model/headline (all SI-written).
+- [ ] Production-build API proof (Part B1) pasted; vercel.json present; env var names listed.
+- [ ] About panel and Earth strip done; screenshots worklog/screens/05-*.png (atlas default, story step 3, briefing, about, compare).
+- [ ] normalize → findings → validate clean, npm run build passes, no console errors, UI_SPEC §5 checklist.
+- [ ] docs/* updated; worklog/05-report.md written. No git commands.
+
+Task 06 — 06-final-qa-fixes.md
+
+Launch message:
+
+text
+Read AGENTS.md, design/UI_SPEC.md and reviews/05-review.md, then do prompts/06-final-qa-fixes.md. Fix Q1–Q10 exactly; no new features. Write worklog/06-report.md when done. Do not run any git commands.
+
+
+Review the agent was told to read first (reviews/05-review.md):
+
+Review — Task 05 + full QA pass
+
+Verdict: accepted. T1–T8, About panel, Earth strip and deploy prep are done. All six caches are SI-written. Reviewer QA results:
+
+What passed (independent reviewer checks)
+- Pipeline clean; processed/public copies identical.
+- Independent raw re-derivation: 300/300 random measured O₂ values found in their raw CSV rows; all 1,284 non-SPICE test labels found in their source rows (SPICE uses composite labels by design).
+- Headline facts recomputed independently: solid max measured O₂ 22.2 %, 0 solid tests > 25 %, Moon window 0 solid / 0 droplet / 30 gas. All 94 fact supports resolve. All 25 investigations have DOIs.
+- API: valid queries 200 + verified; O₂ 150 / string / empty / negative pressure → 400; GET → 405; prompt injection in material ignored.
+- Production deploy works (reviewer deployed to Vercel): static data, SPA deep links, /api/briefing live with Gemini, includeFiles OK. Your Q1 is answered: yes.
+- Dimming in story steps 2–3 works; About panel content is good; no horizontal overflow at 375 px.
+
+Defects found (all must be fixed in Task 06)
+See prompts/06-final-qa-fixes.md — items Q1–Q10.
+
+Task prompt:
+
+Task 06 — Final QA fixes (release candidate)
+
+Read AGENTS.md, design/UI_SPEC.md, and reviews/05-review.md. These are defects found by an independent QA pass of the running app and the live deployment. Fix exactly these; no new features. After this task the app is frozen.
+
+---
+
+Q1 — Internal jargon visible to users (critical)
+~1,100 records show text like *"mapped as burned per Task 02 rule"*, *"mapped per the Task 02 table rule"*, and habitat sources *"project brief reference value"*, *"TBD in project brief"*. Users and judges see these in the test card and facts.
+- Rewrite at the source (pipeline/normalize.py, findings.py, habitats.json) into plain user-facing language, e.g. "Outcome: burned — established flame record; this table has no per-row outcome field.", habitat source "NASA OCHMO-TB-003 (ISS/Earth reference)", Moon "Space Apps 2026 challenge text: ≥30 % O₂, ≤10.2 psi (example point 34 % / 8.2 psi)".
+- Add a validator check that fails if any string in app/public/data/ or app/src/ matches /task ?0\d|reviewer|project brief|prompt file|TBD/i.
+
+Q2 — Story mode skips and ends early (critical — it will be recorded for the demo video)
+Observed: steps auto-advance every ~3 s; clicking Next during a step double-advances (1 → 3); step 4 never appears — the story closes silently after step 3.
+- Auto-advance 4.5 s per step; any Next/Back click resets the timer (never double-advance).
+- Step 4 must appear and stay until the user closes it (no auto-exit). In step 4, scroll the briefing panel into view smoothly and ping each cited point in sequence.
+- Add a "Pause/Play" control. Esc closes.
+
+Q3 — The atlas starts below the fold
+At 1440×900 the plot starts at y=440 px; half the hero visual is off-screen because the filter block sits above it, and there's an empty gap between the panel title and the filters.
+- Collapse filters into one row: Filters ▾ button + a one-line summary (10 investigations · Gas, Droplet, Solid · all outcomes · assumed values on). Expanded state = current controls.
+- Remove the empty gap. Target: plot top ≤ 260 px and plot height ≥ 560 px at 1440×900.
+
+Q4 — No visible takeaway on first load
+Add one key-finding line at the top of the atlas card (mono, small, cited, computed from findings.json):
+EVERY SOLID-MATERIAL TEST IN PSI: ≤ 22.2 % O₂ · PLANNED LUNAR HABITATS: ≥ 30 % O₂ with fact chips.
+
+Q5 — Solid band label collides
+"ALL 263 SOLID TESTS · 13.6–22.2 % O₂" overlaps the EARTH/ISS labels and points, and is truncated at 375 px. Put the label below the band (just under 14.3 psi), shorten to 263 SOLID TESTS · ≤22.2 % O₂, and make sure it does not overlap habitat labels at 1440, 768 and 375 px.
+
+Q6 — Mars preset is broken
+Selecting "Mars habitat (assumption)" leaves O₂/pressure empty, shows the red EXTRAPOLATING state, and Run check stays enabled. Remove the Mars preset (no defensible values). Also: Run check must be disabled whenever O₂ or pressure is empty/invalid, and the coverage strip shows a neutral "Enter O₂ and pressure" state (not red).
+
+Q7 — Live check takes 16–29 s
+Measured: 16 s locally, 29 s on the live deployment. Cause: the exhausted primary model (HTTP 429) is retried before falling through.
+- Do not retry on 429 (quota) — fall through immediately. Retry once only on 500/503/timeouts.
+- Remember a 429'd model in memory for 10 minutes and skip it.
+- Per-call timeout 15 s.
+- Progress UI while running (replace the static state): Building evidence pack · 6 tests · 12 facts → Asking SI · <model> → Verifying citations with elapsed seconds; Run button disabled with "Running…".
+
+Q8 — Briefing content defects (judges will read these)
+1. ISS cache contradicts itself: headline "112 Solid tests near ISS air; cabin pressure assumed", then sentence 1 "No measured PSI test-level data exists … this result is an extrapolation", confidence low. For tier COVERED · ASSUMED P, the evidence pack must state the tier in words, and the system prompt must say: *never use "no data"/"extrapolation" unless the tier is NONE; for ASSUMED P say the O₂ was tested but cabin pressure was not recorded.* Confidence should be medium there.
+2. Apollo 1 cache (our emotional hook) has an ungrammatical first sentence ("…exists for that phase in this region and that the result is extrapolation because…"), a vague headline, cites FLEX droplet pressure bins unrelated to 100 % O₂, and suggests a heptane droplet test for a cabin-materials question. Prompt rules: sentences ≤ 30 words and grammatical; cross-phase evidence only when labeled *indirect* and relevant to O₂; next_tests use the query's phase.
+3. False "different outcome" claim: next_tests say "Compare a material with a different reported outcome" while suggesting Cotton-Fiberglass (SIBAL) — which *burned*, same as PMMA. The contrast material must actually have a different outcome from the selected material in the cited contrast fact (here: Silicone, self-extinguished). Enforce in code, not just the prompt.
+4. Headline must be a finding containing a number from the pack (validator: reject and fall to the next model otherwise). Target style for Moon base: *"No solid material in PSI was tested above 22.2 % O₂ — the Moon base runs at 34 %."* Apollo 1: *"Apollo 1's cabin had 5.4× Earth's O₂ partial pressure; no PSI solid test came within 77.8 points of its O₂."* (Only if those numbers are in the pack — compute 16.70/3.07 = 5.44 as a fact.)
+5. Regenerate all 5 remaining caches (Mars removed) and include each full briefing (headline + sentences + next_tests) in the report so the reviewer can read them.
+
+Q9 — Inconsistent "shown" count
+Desktop shows "1,564 shown", 375 px shows "346 shown" for the same filters. Define "shown" as *points drawn inside the current axis ranges* and use the same rule at all widths (or explain the difference in the label). Verify with numbers at 1440 and 375 px.
+
+Q10 — Team name
+Leave the Team: <TEAM NAME> placeholder as a single constant in one file (src/config.ts) so the reviewer can fill it in; it must be excluded from the Q1 jargon check.
+
+---
+
+Done when
+- [ ] Q1–Q10 fixed; validator includes the jargon check and passes.
+- [ ] normalize → findings → validate clean; npm run build passes; no console errors.
+- [ ] Story mode run recorded as 4 screenshots (one per step) at 1440×900: worklog/screens/06-story-1..4.png; plus 06-atlas-1440.png, 06-mobile-375.png, 06-running.png (progress state).
+- [ ] Live briefing timing measured locally for one custom query (target < 10 s when a working model is available) — paste timing.
+- [ ] Full text of all 5 regenerated caches in worklog/06-report.md. No git commands.
+
+---
+
+Part 3 — Runtime SI prompts used inside the app
+
+app/api/prompts/briefing.system.txt
+
+text
+You are a spacecraft fire-safety analyst writing for engineering teams. This is evidence-backed decision support, not a safety certification.
+
+Use only the supplied evidence pack. Do not introduce measurements, thresholds, causes, predictions, or numeric values absent from the pack. The headline must be a finding with at least one number from the pack, not a generic title. Keep it grammatical and at most 20 words. Every sentence must be grammatical, at most 30 words, and cite one or more exact keys from allowed_citation_keys. Do not put citation labels in sentence text.
+
+Read coverage_tier_words and coverage together. Never say “no data,” “no test-level data,” or “extrapolation” unless the selected phase tier is NONE. For COVERED · ASSUMED CABIN PRESSURE, make the first sentence say that PSI recorded the listed O₂ tests but did not record cabin pressure; 14.7 psi is assumed. Do not say that PSI measured pressure. Set confidence to medium for that tier. Do not describe assumed-pressure records as measured-pressure coverage. A SPARSE tier means limited observations, not zero data.
+
+For the Moon base solid-phase headline, use the supplied highest solid-test O₂ and query O₂ in this style: “No solid material in PSI was tested above 22.2 % O₂ — the Moon base runs at 34 %.” Replace both example numbers with exact pack values. For Apollo 1, use the supplied O₂ partial-pressure ratio and solid-test O₂ gap in this style: “Apollo 1's cabin had 5.4× Earth's O₂ partial pressure; no PSI solid test came within 77.8 points of its O₂.” Replace both example numbers with exact pack values. Use only the corresponding supplied facts and their exact values.
+
+If the selected phase tier is NONE, the first sentence must state that no PSI test-level data exists for that phase in the query region and that the briefing is extrapolation. Otherwise use at most one coverage sentence. For every other sentence, give a practical engineering implication grounded in cited evidence: material choice, ventilation or airflow, detection, suppression, or a specific qualification test. Report outcome shares only as measured test results; do not call them risk, flammability, burn probability, or evidence of sustained combustion. Avoid causal claims not established by the pack and do not prescribe protective controls, including flame-retardant substitutions, detection calibration, or suppression strategies, unless an explicit fact supports them.
+
+Use only same-phase tests, trends, and material contrasts for a proposed test in the query phase. Cross-phase evidence may be mentioned only when it is explicitly labeled “indirect” and relevant to the oxygen comparison; an unrelated pressure or flow bin is not relevant evidence. Every next_tests row must propose a test in the query phase. A statement that another material has a different reported outcome is allowed only when the cited, same-phase material contrast shows an outcome for that material that differs from the selected material. Do not make that claim from a test-count difference alone.
+
+Attribute every trend or count exactly to the population the fact describes. Outcome-share trends and counts cover all fuels or materials in that investigation's bin unless the fact names a specific material; never present them as results for the selected material (write "FLEX droplet tests at 25–35 % O₂", not "heptane tests"). Only a material contrast or a test that names the material supports a material-specific claim. The headline must not name the selected material unless its cited fact names that material; describe the tested population instead (e.g. "FLEX droplet tests", "solid-material tests").
+
+Keep normal-flame oxygen comparisons tied to ambient chamber atmosphere and inverse-flame oxygen comparisons tied to the burner stream; do not generalize one setup to the other. Do not discuss fields, columns, record formats, or how the data is stored. Say “SI,” never “AI.”
+
+Return strict JSON only, with exactly this shape:
+{
+  "headline": "a grammatical finding of at most 20 words containing a supported number",
+  "sentences": [{"text": "one factual sentence of at most 30 words with an engineering implication", "cites": ["exact citation key"]}],
+  "gaps": ["one concise evidence gap"],
+  "next_tests": [{"material": "material or null", "o2_pct": 34, "pressure_psi": 8.2, "flow_cm_s": null, "why": "one-line rationale", "cites": ["exact gap fact citation"]}],
+  "confidence": {"level": "low|medium|high", "reason": "one short evidence-based reason"}
+}
+
+Write 5–7 concise sentences, 1–3 evidence gaps, and 2–3 distinct next-test rows. Every proposed condition must come from the query or an explicit gap in the pack. For COVERED · ASSUMED CABIN PRESSURE, confidence must be medium. JSON numeric values must be numbers, not strings.
+
+
+app/api/prompts/briefing.user.txt
+
+text
+Prepare a briefing for the query and only the supporting evidence below. numeric_values lists every numeric value that the verifier can accept in sentence text. allowed_citation_keys is the complete citation allow-list.
+
+Evidence pack:
+{{EVIDENCE_PACK}}
+
+
+app/api/prompts/parse.system.txt
+
+text
+You convert a spacecraft fire-safety question into structured cabin conditions for a NASA PSI combustion-data tool.
+
+Return strict JSON only:
+{"habitat_id": "moon-base" | "iss" | "earth-sea-level" | "spacesuit" | "apollo-1" | null, "o2_pct": number | null, "pressure_psi": number | null, "flow_cm_s": number | null, "material": string | null, "phase": "solid" | "liquid" | "gas" | null}
+
+Rules:
+- Use a habitat_id only when the question names that environment (Moon, lunar base, pressurized rover → moon-base; space station or ISS → iss; Apollo → apollo-1; spacesuit or EVA → spacesuit; Earth or sea level → earth-sea-level). Never invent other habitats.
+- If the question states explicit numbers, put them in o2_pct (percent oxygen by volume) and pressure_psi (convert: 1 atm = 14.6959 psi, 1 bar = 14.5038 psi, 1 kPa = 0.145038 psi). Explicit numbers override the habitat.
+- material: the material or fuel named in the question, as written (e.g. "Nomex", "PMMA", "cotton", "heptane", "ethylene"); null if none.
+- phase: solid for fabrics, plastics, foams, wiring and other cabin materials; liquid for liquid fuels or droplets; gas for gaseous fuels. Default to solid when a cabin material is implied.
+- Do not answer the question, estimate risk, or add any field not listed. If something is not stated, use null.
+

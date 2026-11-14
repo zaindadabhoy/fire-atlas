@@ -1,0 +1,2899 @@
+[
+  {
+    "id": "PSI-101:same-r:51",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "51",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.38,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 38.0
+    },
+    "note": "B.L. new formula",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 1
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:51a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "51a",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.38,
+      "duration_s": 60.0,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 261.0
+    },
+    "note": "B.L. new formula",
+    "missing_reasons": {
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 2
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:61",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "61",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.38,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 38.0
+    },
+    "note": "Baseline Aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 3
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:61a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "61a",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.38,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 807.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 4
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:62",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "62",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.48,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 39.0
+    },
+    "note": "High Temp aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 5
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:62a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "62a",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.48,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 808.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 6
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:70",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "70",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.48,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 720.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 747.0
+    },
+    "note": "High temp aged STS det",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 7
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:73",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "73",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.38,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 33.0
+    },
+    "note": "Baseline Aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 8
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:73a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "73a",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.38,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 560.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 9
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:75",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "75",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.43,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 32.0
+    },
+    "note": "Mid Temp aging (no Ptrak)",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 10
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:75a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "75a",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.43,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 563.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 11
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:77",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "77",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.48,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 31.0
+    },
+    "note": "High Temp aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 12
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:77a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "77a",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.48,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 559.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 13
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:85",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "85",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.43,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 33.0
+    },
+    "note": "Mid Temp aging run. Repeat 75",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 14
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:85a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "85a",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.43,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 563.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 15
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:90",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "90",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.43,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 38.0
+    },
+    "note": "Mid Temp aging reburn 85",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 16
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:90a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "90a",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.43,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 569.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 17
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:92",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "92",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.38,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 35.0
+    },
+    "note": "Baseline STS det",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 18
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:93",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "93",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.43,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 36.0
+    },
+    "note": "Mid Temp aging run 75 repeat",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 19
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:93a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "93a",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.43,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 568.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 20
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:94",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "94",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 42.0
+    },
+    "note": "Mid Temp aging run mid high",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 21
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:94a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "94a",
+    "material": "Kapton",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 567.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 22
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:101",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "101",
+    "material": "Kapton",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.48,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 29.0
+    },
+    "note": "No flow run w/ aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 23
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:101a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "101a",
+    "material": "Kapton",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.48,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 561.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 24
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:102",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "102",
+    "material": "Kapton",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.48,
+      "duration_s": 120.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 28.0
+    },
+    "note": "No flow run w/ aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 25
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:102a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "102a",
+    "material": "Kapton",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.48,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 563.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 26
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:108",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "108",
+    "material": "Kapton",
+    "flow_cm_s": 1.0,
+    "metrics": {
+      "rt_r0": 1.48,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 30.0
+    },
+    "note": "Low flow run w/aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 27
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:108a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "108a",
+    "material": "Kapton",
+    "flow_cm_s": 1.0,
+    "metrics": {
+      "rt_r0": 1.48,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 560.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 28
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:114",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "114",
+    "material": "Kapton",
+    "flow_cm_s": 2.0,
+    "metrics": {
+      "rt_r0": 1.43,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 28.0
+    },
+    "note": "low flow run w STS no Ptrak",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 29
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:48",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "48",
+    "material": "Silicone",
+    "flow_cm_s": 8.0,
+    "metrics": {
+      "rt_r0": 1.3,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 62.0
+    },
+    "note": "Low Temp",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 30
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:53",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "53",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.35,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 1.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 52.0
+    },
+    "note": "HighTemp",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 31
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:59",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "59",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.33,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 24.0
+    },
+    "note": "baseline aged",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 32
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:59a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "59a",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.33,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 856.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 33
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:60",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "60",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.35,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 49.0
+    },
+    "note": "Htemp ageing",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 34
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:60a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "60a",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.35,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 856.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 35
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:65",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "65",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.33,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 50.0
+    },
+    "note": "Baseline long aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 36
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:65a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "65a",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.33,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 1923.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 37
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:66",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "66",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.36,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 42.0
+    },
+    "note": "High T aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 38
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:66a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "66a",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.36,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 837.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 39
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:67",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "67",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.35,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 720.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 751.0
+    },
+    "note": "High temp aged",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 40
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:72",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "72",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.33,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 42.0
+    },
+    "note": "Baseline STS det",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 41
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:86",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "86",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.34,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 50.0
+    },
+    "note": "Mid temp aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 42
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:86a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "86a",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.34,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 628.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 43
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:91",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "91",
+    "material": "Silicone",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.33,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 46.0
+    },
+    "note": "Baseline STS det",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 44
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:99",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "99",
+    "material": "Silicone",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.35,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 48.0
+    },
+    "note": "No flow run w/aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 45
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:99a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "99a",
+    "material": "Silicone",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.35,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 627.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 46
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:103",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "103",
+    "material": "Silicone",
+    "flow_cm_s": 1.0,
+    "metrics": {
+      "rt_r0": 1.35,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 48.0
+    },
+    "note": "low flow run w/ aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 47
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:103a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "103a",
+    "material": "Silicone",
+    "flow_cm_s": 1.0,
+    "metrics": {
+      "rt_r0": 1.35,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 619.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 48
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:104",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "104",
+    "material": "Silicone",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.35,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 51.0
+    },
+    "note": "No flow run w/ aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 49
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:104a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "104a",
+    "material": "Silicone",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.35,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 636.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 50
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:109",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "109",
+    "material": "Silicone",
+    "flow_cm_s": 2.0,
+    "metrics": {
+      "rt_r0": 1.35,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 28.0
+    },
+    "note": "low flow run w STS",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 51
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:49",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "49",
+    "material": "Lampwick",
+    "flow_cm_s": 8.0,
+    "metrics": {
+      "rt_r0": 1.25,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 51.0
+    },
+    "note": "B.L. High RT/R0",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 52
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:54",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "54",
+    "material": "Lampwick",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.25,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 57.0
+    },
+    "note": "Baseline",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 53
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:55",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "55",
+    "material": "Lampwick",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.25,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 47.0
+    },
+    "note": "High RT/R0 test aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 54
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:55a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "55a",
+    "material": "Lampwick",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.25,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 218.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 55
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:57",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "57",
+    "material": "Lampwick",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.25,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": null
+    },
+    "note": "High RT/R0 reburn sample",
+    "missing_reasons": {
+      "metrics.net_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 56
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:68",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "68",
+    "material": "Lampwick",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.28,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 720.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 747.0
+    },
+    "note": "High temp aged STS det",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 57
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:78",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "78",
+    "material": "Lampwick",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.25,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 37.0
+    },
+    "note": "Baseline aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 58
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:78a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "78a",
+    "material": "Lampwick",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.25,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 581.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 59
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:80",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "80",
+    "material": "Lampwick",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.28,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 40.0
+    },
+    "note": "High temp aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 60
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:80a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "80a",
+    "material": "Lampwick",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.28,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 580.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 61
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:82",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "82",
+    "material": "Lampwick",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.26,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 39.0
+    },
+    "note": "Mid temp aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 62
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:82a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "82a",
+    "material": "Lampwick",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.26,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 579.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 63
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:88",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "88",
+    "material": "Lampwick",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.25,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": null
+    },
+    "note": "Baseline STS det",
+    "missing_reasons": {
+      "metrics.net_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 64
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:96",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "96",
+    "material": "Lampwick",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.25,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 34.0
+    },
+    "note": "No flow run w/aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 65
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:96a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "96a",
+    "material": "Lampwick",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.25,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 582.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 66
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:98",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "98",
+    "material": "Lampwick",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.28,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 37.0
+    },
+    "note": "No flow run w/aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 67
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:98a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "98a",
+    "material": "Lampwick",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.28,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 585.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 68
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:106",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "106",
+    "material": "Lampwick",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.28,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 30.0
+    },
+    "note": "No flow run w/aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 69
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:106a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "106a",
+    "material": "Lampwick",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.28,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 558.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 70
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:110",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "110",
+    "material": "Lampwick",
+    "flow_cm_s": 2.0,
+    "metrics": {
+      "rt_r0": 1.28,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 21.0
+    },
+    "note": "low flow run w/STS",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 71
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:50",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "50",
+    "material": "Teflon",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 33.0
+    },
+    "note": "B.L. High RT/R0",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 72
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:56",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "56",
+    "material": "Teflon",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 41.0
+    },
+    "note": "Baseline",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 73
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:57",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "57",
+    "material": "Teflon",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.25,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": null
+    },
+    "note": "High RT/R0 reburn sample",
+    "missing_reasons": {
+      "metrics.net_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 74
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:58",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "58",
+    "material": "Teflon",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 34.0
+    },
+    "note": "Baseline aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 75
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:58a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "58a",
+    "material": "Teflon",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 805.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 76
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:69",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "69",
+    "material": "Teflon",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 720.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 745.0
+    },
+    "note": "High temp aged STS det",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 77
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:79",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "79",
+    "material": "Teflon",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 33.0
+    },
+    "note": "Baseline aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 78
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:79a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "79a",
+    "material": "Teflon",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 560.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 79
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:81",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "81",
+    "material": "Teflon",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 30.0
+    },
+    "note": "High temp aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 80
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:81a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "81a",
+    "material": "Teflon",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 559.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 81
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:83",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "83",
+    "material": "Teflon",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 30.0
+    },
+    "note": "Mid temp aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 82
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:83a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "83a",
+    "material": "Teflon",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 557.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 83
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:89",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "89",
+    "material": "Teflon",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 31.0
+    },
+    "note": "Baseline STS det",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 84
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:100",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "100",
+    "material": "Teflon",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 29.0
+    },
+    "note": "No flow run w/ aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 85
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:100a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "100a",
+    "material": "Teflon",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 560.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 86
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:105",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "105",
+    "material": "Teflon",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 24.0
+    },
+    "note": "No flow run w/ aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 87
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:105a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "105a",
+    "material": "Teflon",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 559.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 88
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:111",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "111",
+    "material": "Teflon",
+    "flow_cm_s": 2.0,
+    "metrics": {
+      "rt_r0": 1.45,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 43.0
+    },
+    "note": "low flow run w/ STS",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 89
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:52",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "52",
+    "material": "Pyrell",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.22,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": null
+    },
+    "note": "Baseline",
+    "missing_reasons": {
+      "metrics.net_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 90
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:63",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "63",
+    "material": "Pyrell",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.22,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 56.0
+    },
+    "note": "Baseline Aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 91
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:63a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "63a",
+    "material": "Pyrell",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.22,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 840.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 92
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:64",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "64",
+    "material": "Pyrell",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.23,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 47.0
+    },
+    "note": "High Temp aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 93
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:64a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "64a",
+    "material": "Pyrell",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.23,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 842.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 94
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:71",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "71",
+    "material": "Pyrell",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.23,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 720.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 750.0
+    },
+    "note": "High temp aged STS det",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 95
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:74",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "74",
+    "material": "Pyrell",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.22,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 48.0
+    },
+    "note": "Baseline Aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 96
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:74a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "74a",
+    "material": "Pyrell",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.22,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 623.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 97
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:76",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "76",
+    "material": "Pyrell",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.23,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 51.0
+    },
+    "note": "High Temp aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 98
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:76a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "76a",
+    "material": "Pyrell",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.23,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 625.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 99
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:84",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "84",
+    "material": "Pyrell",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.23,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 53.0
+    },
+    "note": "Mid Temp aging retry",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 100
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:84a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "84a",
+    "material": "Pyrell",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.23,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 632.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 101
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:87",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "87",
+    "material": "Pyrell",
+    "flow_cm_s": 8.1,
+    "metrics": {
+      "rt_r0": 1.22,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 45.0
+    },
+    "note": "Baseline STS det",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 102
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:95",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "95",
+    "material": "Pyrell",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.22,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 38.0
+    },
+    "note": "No flow run w/ aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 103
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:95a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "95a",
+    "material": "Pyrell",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.22,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": null
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.net_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 104
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:97",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "97",
+    "material": "Pyrell",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.23,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 48.0
+    },
+    "note": "No flow run w/aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 105
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:97a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "97a",
+    "material": "Pyrell",
+    "flow_cm_s": 0.0,
+    "metrics": {
+      "rt_r0": 1.23,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 624.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 106
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:107",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "107",
+    "material": "Pyrell",
+    "flow_cm_s": 1.0,
+    "metrics": {
+      "rt_r0": 1.23,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 32.0
+    },
+    "note": "Low flow run w/aging",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 107
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:107a",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "107a",
+    "material": "Pyrell",
+    "flow_cm_s": 1.0,
+    "metrics": {
+      "rt_r0": 1.23,
+      "duration_s": null,
+      "primary_aging_time_s": null,
+      "primary_mixing_time_s": null,
+      "net_aging_time_s": 559.0
+    },
+    "note": "aged",
+    "missing_reasons": {
+      "metrics.duration_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_aging_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.primary_mixing_time_s": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 108
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-101:same-r:113",
+    "investigation": "PSI-101",
+    "acronym": "SAME-R",
+    "test_label": "113",
+    "material": "Pyrell",
+    "flow_cm_s": 2.0,
+    "metrics": {
+      "rt_r0": 1.23,
+      "duration_s": 60.0,
+      "primary_aging_time_s": 11.0,
+      "primary_mixing_time_s": 8.0,
+      "net_aging_time_s": 31.0
+    },
+    "note": "low flow run w STS",
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "row": 109
+    },
+    "doi": "10.60555/2np7-jv14",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
+  },
+  {
+    "id": "PSI-102:same:1",
+    "investigation": "PSI-102",
+    "acronym": "SAME",
+    "test_label": "1",
+    "material": "Teflon",
+    "flow_cm_s": 5.0,
+    "metrics": {
+      "weight_loss_rate_mg_min": 2.0,
+      "aging_duration_min": 1.0
+    },
+    "note": null,
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-102_Experimental table_SAME.csv",
+      "row": 1
+    },
+    "doi": "10.60555/gd4k-8h62",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102"
+  },
+  {
+    "id": "PSI-102:same:2",
+    "investigation": "PSI-102",
+    "acronym": "SAME",
+    "test_label": "2",
+    "material": "Teflon",
+    "flow_cm_s": 5.0,
+    "metrics": {
+      "weight_loss_rate_mg_min": 1.0,
+      "aging_duration_min": 1.0
+    },
+    "note": null,
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-102_Experimental table_SAME.csv",
+      "row": 2
+    },
+    "doi": "10.60555/gd4k-8h62",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102"
+  },
+  {
+    "id": "PSI-102:same:3",
+    "investigation": "PSI-102",
+    "acronym": "SAME",
+    "test_label": "3",
+    "material": "Teflon",
+    "flow_cm_s": 5.0,
+    "metrics": {
+      "weight_loss_rate_mg_min": 2.0,
+      "aging_duration_min": 20.0
+    },
+    "note": null,
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-102_Experimental table_SAME.csv",
+      "row": 3
+    },
+    "doi": "10.60555/gd4k-8h62",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102"
+  },
+  {
+    "id": "PSI-102:same:4",
+    "investigation": "PSI-102",
+    "acronym": "SAME",
+    "test_label": "4",
+    "material": "Teflon",
+    "flow_cm_s": 10.0,
+    "metrics": {
+      "weight_loss_rate_mg_min": 2.0,
+      "aging_duration_min": 1.0
+    },
+    "note": null,
+    "missing_reasons": {},
+    "source": {
+      "file": "PSI-102_Experimental table_SAME.csv",
+      "row": 4
+    },
+    "doi": "10.60555/gd4k-8h62",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102"
+  },
+  {
+    "id": "PSI-102:same:5",
+    "investigation": "PSI-102",
+    "acronym": "SAME",
+    "test_label": "5",
+    "material": "Kapton: same conditions as 1-4",
+    "flow_cm_s": null,
+    "metrics": {
+      "weight_loss_rate_mg_min": null,
+      "aging_duration_min": null
+    },
+    "note": null,
+    "missing_reasons": {
+      "flow_cm_s": "The source table has no measured flow velocity in cm/s for this record.",
+      "metrics.weight_loss_rate_mg_min": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.aging_duration_min": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-102_Experimental table_SAME.csv",
+      "row": 5
+    },
+    "doi": "10.60555/gd4k-8h62",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102"
+  },
+  {
+    "id": "PSI-102:same:6",
+    "investigation": "PSI-102",
+    "acronym": "SAME",
+    "test_label": "6",
+    "material": "Silicone Rubber: same conditions as 1-4",
+    "flow_cm_s": null,
+    "metrics": {
+      "weight_loss_rate_mg_min": null,
+      "aging_duration_min": null
+    },
+    "note": null,
+    "missing_reasons": {
+      "flow_cm_s": "The source table has no measured flow velocity in cm/s for this record.",
+      "metrics.weight_loss_rate_mg_min": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.aging_duration_min": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-102_Experimental table_SAME.csv",
+      "row": 6
+    },
+    "doi": "10.60555/gd4k-8h62",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102"
+  },
+  {
+    "id": "PSI-102:same:7",
+    "investigation": "PSI-102",
+    "acronym": "SAME",
+    "test_label": "7",
+    "material": "Lampwick: same conditions as 1-4",
+    "flow_cm_s": null,
+    "metrics": {
+      "weight_loss_rate_mg_min": null,
+      "aging_duration_min": null
+    },
+    "note": null,
+    "missing_reasons": {
+      "flow_cm_s": "The source table has no measured flow velocity in cm/s for this record.",
+      "metrics.weight_loss_rate_mg_min": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.aging_duration_min": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-102_Experimental table_SAME.csv",
+      "row": 7
+    },
+    "doi": "10.60555/gd4k-8h62",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102"
+  },
+  {
+    "id": "PSI-102:same:8",
+    "investigation": "PSI-102",
+    "acronym": "SAME",
+    "test_label": "8",
+    "material": "Dibutyl Phthalate: same conditions as 1-4",
+    "flow_cm_s": null,
+    "metrics": {
+      "weight_loss_rate_mg_min": null,
+      "aging_duration_min": null
+    },
+    "note": null,
+    "missing_reasons": {
+      "flow_cm_s": "The source table has no measured flow velocity in cm/s for this record.",
+      "metrics.weight_loss_rate_mg_min": "The corresponding PSI field is absent, blank, or non-numeric in this row.",
+      "metrics.aging_duration_min": "The corresponding PSI field is absent, blank, or non-numeric in this row."
+    },
+    "source": {
+      "file": "PSI-102_Experimental table_SAME.csv",
+      "row": 8
+    },
+    "doi": "10.60555/gd4k-8h62",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102"
+  },
+  {
+    "id": "PSI-47:daft:D1",
+    "investigation": "PSI-47",
+    "acronym": "DAFT / DAFT-2",
+    "test_label": "D1",
+    "material": "Arizona Road Dust (ARD, Fine) in combination with ISS GN2 to create an aerosol for measurement purposes.",
+    "flow_cm_s": null,
+    "metrics": {},
+    "note": "Contained the modified P-Trak, an Alcohol Wick and batteries; Sampled air near Express rack 4",
+    "missing_reasons": {
+      "flow_cm_s": "The source table has no measured flow velocity in cm/s for this record."
+    },
+    "source": {
+      "file": "PSI-47_Experimental table_DAFT.csv",
+      "row": 1
+    },
+    "doi": "10.60555/ztgj-d202",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47"
+  },
+  {
+    "id": "PSI-47:daft:D2",
+    "investigation": "PSI-47",
+    "acronym": "DAFT / DAFT-2",
+    "test_label": "D2",
+    "material": "Arizona Road Dust (ARD, Fine) in combination with ISS GN2 to create an aerosol for measurement purposes.",
+    "flow_cm_s": null,
+    "metrics": {},
+    "note": "Contained DustTrak and batteries; Sampled separated Velcro and the air near Port rack 6 and in Node 1",
+    "missing_reasons": {
+      "flow_cm_s": "The source table has no measured flow velocity in cm/s for this record."
+    },
+    "source": {
+      "file": "PSI-47_Experimental table_DAFT.csv",
+      "row": 2
+    },
+    "doi": "10.60555/ztgj-d202",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47"
+  }
+]

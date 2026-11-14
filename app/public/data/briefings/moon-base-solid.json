@@ -1,0 +1,99 @@
+{
+  "query": {
+    "o2_pct": 34,
+    "pressure_psi": 8.2,
+    "flow_cm_s": null,
+    "material": "PMMA",
+    "phase": "solid",
+    "pillar": null,
+    "habitat_id": "moon-base",
+    "o2_partial_psi": 2.79
+  },
+  "briefing": {
+    "headline": "No solid material in PSI was tested above 22.2 % O₂ — the Moon base runs at 34 %.",
+    "sentences": [
+      {
+        "text": "No PSI test-level data exists for the Solid phase in this region, so this briefing is extrapolation.",
+        "cites": [
+          "coverage:solid"
+        ]
+      },
+      {
+        "text": "The highest measured O₂ in solid tests is 22.2 %, which is below the 34 % O₂ lunar habitat requirement.",
+        "cites": [
+          "fact:solid_max_o2",
+          "fact:moon-base_o2_min"
+        ]
+      },
+      {
+        "text": "There are 0 solid-material tests conducted above 25 % measured O₂ to inform PMMA combustion behavior.",
+        "cites": [
+          "fact:solid_tests_above_25"
+        ]
+      },
+      {
+        "text": "At 18-25 % O₂, SAFFIRE solid tests showed 63.6 % burned and 36.4 % self-extinguished, indicating variable outcomes.",
+        "cites": [
+          "fact:trend_o2_saffire_18_25"
+        ]
+      },
+      {
+        "text": "Material contrasts at 22.1 % O₂ show PMMA burned while silicone self-extinguished, highlighting material-specific sensitivity.",
+        "cites": [
+          "fact:material_contrast_psi_99_21"
+        ]
+      }
+    ],
+    "gaps": [
+      "No solid-phase test data exists for O₂ concentrations above 22.2 %."
+    ],
+    "next_tests": [
+      {
+        "material": "PMMA",
+        "o2_pct": 34,
+        "pressure_psi": 8.2,
+        "flow_cm_s": null,
+        "why": "Measure the selected material at the target atmosphere to establish direct Solid coverage.",
+        "cites": [
+          "coverage:solid"
+        ]
+      },
+      {
+        "material": "Silicone",
+        "o2_pct": 34,
+        "pressure_psi": 8.2,
+        "flow_cm_s": 20,
+        "why": "Compare Silicone with PMMA; the cited Solid results include a different reported outcome.",
+        "cites": [
+          "fact:moon-base_nearest_solid",
+          "fact:material_contrast_psi_99_21"
+        ]
+      },
+      {
+        "material": "PMMA",
+        "o2_pct": 22.2,
+        "pressure_psi": 14.7,
+        "flow_cm_s": null,
+        "why": "Use the nearest Solid source condition as a reference while testing the target atmosphere.",
+        "cites": [
+          "fact:moon-base_nearest_solid"
+        ]
+      }
+    ],
+    "confidence": {
+      "level": "low",
+      "reason": "The query O₂ concentration of 34 % exceeds the maximum tested solid-phase O₂ of 22.2 %."
+    }
+  },
+  "verification": {
+    "sentences_total": 5,
+    "sentences_kept": 5,
+    "citations_dropped": 0,
+    "numbers_unverified": 0
+  },
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "evidence_pack_hash": "f457587dc59d2dc345260ce75a205ae57c76f982071a1d15f30b0218e6b3396d",
+  "generated_at": "2026-11-14T16:56:58.834Z",
+  "cached": true
+}

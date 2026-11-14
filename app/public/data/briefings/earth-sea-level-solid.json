@@ -1,0 +1,87 @@
+{
+  "query": {
+    "o2_pct": 20.9,
+    "pressure_psi": 14.7,
+    "flow_cm_s": null,
+    "material": "PMMA",
+    "phase": "solid",
+    "pillar": null,
+    "habitat_id": "earth-sea-level",
+    "o2_partial_psi": 3.07
+  },
+  "briefing": {
+    "headline": "114 Solid tests near Earth sea-level air; cabin pressure assumed",
+    "sentences": [
+      {
+        "text": "114 Solid tests recorded O₂ near this query, but PSI did not record cabin pressure; 14.7 psi is a cabin-pressure assumption.",
+        "cites": [
+          "coverage:solid"
+        ]
+      },
+      {
+        "text": "Nearest solid-phase evidence for Earth sea level is PSI-25:bass-ii:P25 at 20.9 % O₂.",
+        "cites": [
+          "fact:earth-sea-level_nearest_solid"
+        ]
+      },
+      {
+        "text": "SAFFIRE outcomes at 18–25 % ambient O₂ show 63.6 % of tests burned and 36.4 % self-extinguished.",
+        "cites": [
+          "fact:trend_o2_saffire_18_25"
+        ]
+      },
+      {
+        "text": "Matched solid-phase tests at 22.1 % O₂ indicate PMMA burns while silicone self-extinguishes under similar conditions.",
+        "cites": [
+          "fact:material_contrast_psi_99_21"
+        ]
+      },
+      {
+        "text": "All 263 solid-phase tests are limited to a maximum measured O₂ concentration of 22.2 %.",
+        "cites": [
+          "fact:solid_max_o2"
+        ]
+      }
+    ],
+    "gaps": [
+      "No measured solid-phase test-level data exists for cabin pressure at 14.7 psi."
+    ],
+    "next_tests": [
+      {
+        "material": "PMMA",
+        "o2_pct": 20.9,
+        "pressure_psi": 14.7,
+        "flow_cm_s": null,
+        "why": "Verify PMMA combustion outcome at Earth sea-level conditions with measured pressure.",
+        "cites": [
+          "fact:earth-sea-level_nearest_solid"
+        ]
+      },
+      {
+        "material": "Silicone",
+        "o2_pct": 20.9,
+        "pressure_psi": 14.7,
+        "flow_cm_s": null,
+        "why": "Assess silicone self-extinguishing behavior at Earth sea-level conditions.",
+        "cites": [
+          "fact:material_contrast_psi_99_21"
+        ]
+      }
+    ],
+    "confidence": {
+      "level": "medium",
+      "reason": "The analysis relies on assumed cabin pressure for all solid-phase test data."
+    }
+  },
+  "verification": {
+    "sentences_total": 5,
+    "sentences_kept": 5,
+    "citations_dropped": 0,
+    "numbers_unverified": 0
+  },
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "evidence_pack_hash": "bf5c6f11fcdde9ef497798f618b50e01798010f59dfbc1a0b0da4bbead797f73",
+  "generated_at": "2026-11-14T16:56:18.781Z",
+  "cached": true
+}

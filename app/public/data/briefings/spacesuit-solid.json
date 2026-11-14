@@ -1,0 +1,94 @@
+{
+  "query": {
+    "o2_pct": 100,
+    "pressure_psi": 4.3,
+    "flow_cm_s": null,
+    "material": "PMMA",
+    "phase": "solid",
+    "pillar": null,
+    "habitat_id": "spacesuit",
+    "o2_partial_psi": 4.3
+  },
+  "briefing": {
+    "headline": "No solid material in PSI was tested above 22.2 % O₂ — the spacesuit runs at 100 %.",
+    "sentences": [
+      {
+        "text": "No PSI test-level data exists for the Solid phase in this region, so this briefing is extrapolation.",
+        "cites": [
+          "coverage:solid"
+        ]
+      },
+      {
+        "text": "The spacesuit O₂ partial pressure is 4.3 psi, which is 40% above Earth's 3.07 psi.",
+        "cites": [
+          "fact:spacesuit_o2_partial_pressure_vs_earth"
+        ]
+      },
+      {
+        "text": "The highest measured O₂ in solid tests is 22.2 %, leaving a gap of 77.8 points from the query.",
+        "cites": [
+          "fact:solid_max_o2",
+          "fact:spacesuit_nearest_solid"
+        ]
+      },
+      {
+        "text": "Solid-material tests above 25 % measured O₂ are zero, limiting the ability to assess PMMA behavior at high concentrations.",
+        "cites": [
+          "fact:solid_tests_above_25"
+        ]
+      },
+      {
+        "text": "Material contrasts at 22.1 % O₂ show PMMA burned, while silicone self-extinguished, indicating material-specific outcomes in similar atmospheres.",
+        "cites": [
+          "fact:material_contrast_psi_99_21"
+        ]
+      },
+      {
+        "text": "SAFFIRE tests at 18-25 % O₂ show a 63.6% burn rate, though these results cannot be generalized to 100 % O₂ environments.",
+        "cites": [
+          "fact:trend_o2_saffire_18_25"
+        ]
+      }
+    ],
+    "gaps": [
+      "No solid-phase test data exists for O₂ concentrations above 22.2 %."
+    ],
+    "next_tests": [
+      {
+        "material": "PMMA",
+        "o2_pct": 100,
+        "pressure_psi": 4.3,
+        "flow_cm_s": null,
+        "why": "Evaluate PMMA combustion behavior at the specific spacesuit O₂ and pressure conditions.",
+        "cites": [
+          "fact:spacesuit_nearest_solid"
+        ]
+      },
+      {
+        "material": "Silicone",
+        "o2_pct": 100,
+        "pressure_psi": 4.3,
+        "flow_cm_s": null,
+        "why": "Compare silicone performance against PMMA at the query O₂ and pressure.",
+        "cites": [
+          "fact:material_contrast_psi_99_21"
+        ]
+      }
+    ],
+    "confidence": {
+      "level": "low",
+      "reason": "The query O₂ concentration of 100 % is significantly outside the range of all 263 available solid-phase tests."
+    }
+  },
+  "verification": {
+    "sentences_total": 6,
+    "sentences_kept": 6,
+    "citations_dropped": 0,
+    "numbers_unverified": 0
+  },
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "evidence_pack_hash": "13ce0bb0367e13be82a3e18019e9e606666c028a0db4d78c897fa9c10c193f09",
+  "generated_at": "2026-11-14T16:56:45.028Z",
+  "cached": true
+}

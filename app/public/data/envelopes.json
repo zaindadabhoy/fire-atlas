@@ -1,0 +1,4739 @@
+[
+  {
+    "id": "PSI-106:row1",
+    "investigation": "PSI-106",
+    "acronym": "SLICE",
+    "fuel_phase": "gas",
+    "material": "CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "100% CH4",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-106_Experimental table_Slice.csv",
+      "row": 1
+    },
+    "doi": "10.60555/pm12-rg61",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "extra": {
+      "test_date_raw": "2012-FEB-09",
+      "fuel_description_raw": "100% CH4"
+    }
+  },
+  {
+    "id": "PSI-106:row2",
+    "investigation": "PSI-106",
+    "acronym": "SLICE",
+    "fuel_phase": "gas",
+    "material": "CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "40% CH4 (balance N2) including 2 pyrometry calibration tests and 2 fan calibrations",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-106_Experimental table_Slice.csv",
+      "row": 2
+    },
+    "doi": "10.60555/pm12-rg61",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "extra": {
+      "test_date_raw": "2012-FEB-13 SLICE testing with",
+      "fuel_description_raw": "40% CH4 (balance N2) including 2 pyrometry calibration tests and 2 fan calibrations"
+    }
+  },
+  {
+    "id": "PSI-106:row3",
+    "investigation": "PSI-106",
+    "acronym": "SLICE",
+    "fuel_phase": "gas",
+    "material": "CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "70% CH4 (balance N2) including 1 pyrometry calibration test",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-106_Experimental table_Slice.csv",
+      "row": 3
+    },
+    "doi": "10.60555/pm12-rg61",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "extra": {
+      "test_date_raw": "2012-FEB-17",
+      "fuel_description_raw": "70% CH4 (balance N2) including 1 pyrometry calibration test"
+    }
+  },
+  {
+    "id": "PSI-106:row4",
+    "investigation": "PSI-106",
+    "acronym": "SLICE",
+    "fuel_phase": "gas",
+    "material": "C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "20% C2H4 (balance N2)",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-106_Experimental table_Slice.csv",
+      "row": 4
+    },
+    "doi": "10.60555/pm12-rg61",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "extra": {
+      "test_date_raw": "2012-FEB-20",
+      "fuel_description_raw": "20% C2H4 (balance N2)"
+    }
+  },
+  {
+    "id": "PSI-106:row5",
+    "investigation": "PSI-106",
+    "acronym": "SLICE",
+    "fuel_phase": "gas",
+    "material": "CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "100% CH4",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-106_Experimental table_Slice.csv",
+      "row": 5
+    },
+    "doi": "10.60555/pm12-rg61",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "extra": {
+      "test_date_raw": "2012-FEB-27",
+      "fuel_description_raw": "100% CH4"
+    }
+  },
+  {
+    "id": "PSI-106:row6",
+    "investigation": "PSI-106",
+    "acronym": "SLICE",
+    "fuel_phase": "gas",
+    "material": "CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "40% CH4 (balance N2)",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-106_Experimental table_Slice.csv",
+      "row": 6
+    },
+    "doi": "10.60555/pm12-rg61",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "extra": {
+      "test_date_raw": "2012-MAR-01",
+      "fuel_description_raw": "40% CH4 (balance N2)"
+    }
+  },
+  {
+    "id": "PSI-106:row7",
+    "investigation": "PSI-106",
+    "acronym": "SLICE",
+    "fuel_phase": "gas",
+    "material": "CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "70% CH4 (balance N2) where the fuel bottle was not emptied (in contrast to most days)",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-106_Experimental table_Slice.csv",
+      "row": 7
+    },
+    "doi": "10.60555/pm12-rg61",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "extra": {
+      "test_date_raw": "2012-MAR-05 SLICE testing with",
+      "fuel_description_raw": "70% CH4 (balance N2) where the fuel bottle was not emptied (in contrast to most days)"
+    }
+  },
+  {
+    "id": "PSI-106:row8",
+    "investigation": "PSI-106",
+    "acronym": "SLICE",
+    "fuel_phase": "gas",
+    "material": "C2H6",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "100% C2H6",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-106_Experimental table_Slice.csv",
+      "row": 8
+    },
+    "doi": "10.60555/pm12-rg61",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "extra": {
+      "test_date_raw": "2012-MAR-09",
+      "fuel_description_raw": "100% C2H6"
+    }
+  },
+  {
+    "id": "PSI-106:row9",
+    "investigation": "PSI-106",
+    "acronym": "SLICE",
+    "fuel_phase": "gas",
+    "material": "CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "100% CH4",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-106_Experimental table_Slice.csv",
+      "row": 9
+    },
+    "doi": "10.60555/pm12-rg61",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "extra": {
+      "test_date_raw": "2012-MAR-12",
+      "fuel_description_raw": "100% CH4"
+    }
+  },
+  {
+    "id": "PSI-106:row10",
+    "investigation": "PSI-106",
+    "acronym": "SLICE",
+    "fuel_phase": "gas",
+    "material": "C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "20% C2H4 (balance N2)",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-106_Experimental table_Slice.csv",
+      "row": 10
+    },
+    "doi": "10.60555/pm12-rg61",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "extra": {
+      "test_date_raw": "2012-MAR-15",
+      "fuel_description_raw": "20% C2H4 (balance N2)"
+    }
+  },
+  {
+    "id": "PSI-106:row11",
+    "investigation": "PSI-106",
+    "acronym": "SLICE",
+    "fuel_phase": "gas",
+    "material": "CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "70% CH4 (balance N2) including 1 pyrometry calibration test and 2 fan calibrations",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-106_Experimental table_Slice.csv",
+      "row": 11
+    },
+    "doi": "10.60555/pm12-rg61",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "extra": {
+      "test_date_raw": "2012-MAR-19 SLICE testing with",
+      "fuel_description_raw": "70% CH4 (balance N2) including 1 pyrometry calibration test and 2 fan calibrations"
+    }
+  },
+  {
+    "id": "PSI-106:row12",
+    "investigation": "PSI-106",
+    "acronym": "SLICE",
+    "fuel_phase": "gas",
+    "material": "C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "100% C2H4",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-106_Experimental table_Slice.csv",
+      "row": 12
+    },
+    "doi": "10.60555/pm12-rg61",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "extra": {
+      "test_date_raw": "2012-MAR-23 Last day of testing: SPICE testing with 100% C3H8 and then 100%",
+      "fuel_description_raw": "100% C2H4"
+    }
+  },
+  {
+    "id": "PSI-142:row1",
+    "investigation": "PSI-142",
+    "acronym": null,
+    "fuel_phase": null,
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "CFE limit with ozone",
+    "missing_reasons": {
+      "fuel_phase": "Fuel phase is not determinable from the summary row.",
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-142_Experimental table_Data Summary Table.csv",
+      "row": 1
+    },
+    "doi": "10.60555/80qf-vj95",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-142",
+    "extra": {
+      "data_id": 1.0,
+      "reference_publication_link": "http://dx.doi.org/10.1016/j.combustflame.2017.01.028",
+      "figure_id_in_reference": "4"
+    }
+  },
+  {
+    "id": "PSI-142:row2",
+    "investigation": "PSI-142",
+    "acronym": null,
+    "fuel_phase": null,
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "CFE limit without ozone",
+    "missing_reasons": {
+      "fuel_phase": "Fuel phase is not determinable from the summary row.",
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-142_Experimental table_Data Summary Table.csv",
+      "row": 2
+    },
+    "doi": "10.60555/80qf-vj95",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-142",
+    "extra": {
+      "data_id": 2.0,
+      "reference_publication_link": "http://dx.doi.org/10.1016/j.combustflame.2017.01.028",
+      "figure_id_in_reference": "5"
+    }
+  },
+  {
+    "id": "PSI-142:row3",
+    "investigation": "PSI-142",
+    "acronym": null,
+    "fuel_phase": null,
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "CFE and HFE Predicted vs Measured",
+    "missing_reasons": {
+      "fuel_phase": "Fuel phase is not determinable from the summary row.",
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-142_Experimental table_Data Summary Table.csv",
+      "row": 3
+    },
+    "doi": "10.60555/80qf-vj95",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-142",
+    "extra": {
+      "data_id": 3.0,
+      "reference_publication_link": "http://dx.doi.org/10.1016/j.combustflame.2017.01.028",
+      "figure_id_in_reference": "7"
+    }
+  },
+  {
+    "id": "PSI-142:row4",
+    "investigation": "PSI-142",
+    "acronym": null,
+    "fuel_phase": null,
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "Measured and computed DME/O2/O3 CFE and HFE",
+    "missing_reasons": {
+      "fuel_phase": "Fuel phase is not determinable from the summary row.",
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-142_Experimental table_Data Summary Table.csv",
+      "row": 4
+    },
+    "doi": "10.60555/80qf-vj95",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-142",
+    "extra": {
+      "data_id": 4.0,
+      "reference_publication_link": "https://doi.org/10.1016/j.proci.2018.07.050",
+      "figure_id_in_reference": "2"
+    }
+  },
+  {
+    "id": "PSI-142:row5",
+    "investigation": "PSI-142",
+    "acronym": null,
+    "fuel_phase": null,
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "CH2O PLIF and thermometry",
+    "missing_reasons": {
+      "fuel_phase": "Fuel phase is not determinable from the summary row.",
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-142_Experimental table_Data Summary Table.csv",
+      "row": 5
+    },
+    "doi": "10.60555/80qf-vj95",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-142",
+    "extra": {
+      "data_id": 5.0,
+      "reference_publication_link": "https://doi.org/10.1016/j.combustflame.2018.03.013",
+      "figure_id_in_reference": "8"
+    }
+  },
+  {
+    "id": "PSI-142:row6",
+    "investigation": "PSI-142",
+    "acronym": null,
+    "fuel_phase": null,
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "nC7/nC10/nC12 chemiluminescence",
+    "missing_reasons": {
+      "fuel_phase": "Fuel phase is not determinable from the summary row.",
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-142_Experimental table_Data Summary Table.csv",
+      "row": 6
+    },
+    "doi": "10.60555/80qf-vj95",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-142",
+    "extra": {
+      "data_id": 6.0,
+      "reference_publication_link": "https://doi.org/10.1016/j.proci.2018.06.161",
+      "figure_id_in_reference": "2"
+    }
+  },
+  {
+    "id": "PSI-142:row7",
+    "investigation": "PSI-142",
+    "acronym": null,
+    "fuel_phase": null,
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "nC12 chemiluminescence",
+    "missing_reasons": {
+      "fuel_phase": "Fuel phase is not determinable from the summary row.",
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-142_Experimental table_Data Summary Table.csv",
+      "row": 7
+    },
+    "doi": "10.60555/80qf-vj95",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-142",
+    "extra": {
+      "data_id": 7.0,
+      "reference_publication_link": "https://doi.org/10.1016/j.proci.2018.06.162",
+      "figure_id_in_reference": "7"
+    }
+  },
+  {
+    "id": "PSI-142:row8",
+    "investigation": "PSI-142",
+    "acronym": null,
+    "fuel_phase": null,
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "nC12 thermometry",
+    "missing_reasons": {
+      "fuel_phase": "Fuel phase is not determinable from the summary row.",
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-142_Experimental table_Data Summary Table.csv",
+      "row": 8
+    },
+    "doi": "10.60555/80qf-vj95",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-142",
+    "extra": {
+      "data_id": 8.0,
+      "reference_publication_link": "https://doi.org/10.1016/j.proci.2018.06.163",
+      "figure_id_in_reference": "9"
+    }
+  },
+  {
+    "id": "PSI-20:row1",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": [
+      21.0,
+      26.5,
+      40.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      40.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 10.0,
+    "note": "Oxygen Conc. (as diluted with nitrogen on a volume basis) was varied between tests where approximate concentrations for tests that ignited are listed. The chamber pressures were also varied but are not identified in this summary table.",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 1
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2019 Feb 8",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row2",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": [
+      26.5,
+      34.0
+    ],
+    "o2_pct_range": [
+      26.5,
+      34.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 8.0,
+    "note": "Flames Ignited is the number ignited on that day (neglecting the day change on ISS).",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 2
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2019 Feb 20",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row3",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "50% C2H4",
+    "o2_pct_values": [
+      21.0,
+      26.5,
+      34.0,
+      40.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      40.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 8.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 3
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2019 Feb 25",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row4",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "50% C2H4",
+    "o2_pct_values": [
+      26.5,
+      40.0
+    ],
+    "o2_pct_range": [
+      26.5,
+      40.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 6.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 4
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2019 March 4",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row5",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "50% C2H4",
+    "o2_pct_values": [
+      3400.0
+    ],
+    "o2_pct_range": [
+      3400.0,
+      3400.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 6.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 5
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2019 March 7",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row6",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "50% C2H4",
+    "o2_pct_values": [
+      26.5,
+      34.0
+    ],
+    "o2_pct_range": [
+      26.5,
+      34.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 7.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 6
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2019 March 11",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row7",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "100%C2H4",
+    "o2_pct_values": [
+      26.5,
+      34.0
+    ],
+    "o2_pct_range": [
+      26.5,
+      34.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 8.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 7
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2019 March 28",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row8",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "100%C2H4",
+    "o2_pct_values": [
+      2100.0
+    ],
+    "o2_pct_range": [
+      2100.0,
+      2100.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 0.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 8
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2019 April 1",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row9",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "100%C2H4",
+    "o2_pct_values": [
+      21.0,
+      26.5,
+      34.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      34.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 9.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 9
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2019 April 4",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row10",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": [
+      25.0,
+      34.0,
+      40.0
+    ],
+    "o2_pct_range": [
+      25.0,
+      40.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 13.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 10
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2020 Sept 3",
+      "burner_size_mm": 50.0
+    }
+  },
+  {
+    "id": "PSI-20:row11",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": [
+      26.5,
+      34.0
+    ],
+    "o2_pct_range": [
+      26.5,
+      34.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 13.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 11
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2020 Oct 17",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row12",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "100% CH4",
+    "o2_pct_values": [
+      25.0,
+      34.0,
+      40.0
+    ],
+    "o2_pct_range": [
+      25.0,
+      40.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 21.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 12
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2020 Dec 5",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row13",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "100% CH4",
+    "o2_pct_values": [
+      25.0,
+      40.0
+    ],
+    "o2_pct_range": [
+      25.0,
+      40.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 18.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 13
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2020 Dec 4",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row14",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "50% C2H4",
+    "o2_pct_values": [
+      25.0,
+      40.0
+    ],
+    "o2_pct_range": [
+      25.0,
+      40.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 12.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 14
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2020 Dec 11",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row15",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": [
+      34.0,
+      40.0
+    ],
+    "o2_pct_range": [
+      34.0,
+      40.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 10.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 15
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2020 Dec 17",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row16",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": [
+      25.0,
+      34.0,
+      40.0
+    ],
+    "o2_pct_range": [
+      25.0,
+      40.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 17.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 16
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2020 Dec 23",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row17",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": [
+      21.0,
+      26.5,
+      34.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      34.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 15.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 17
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2021 Jan 20",
+      "burner_size_mm": 25.0
+    }
+  },
+  {
+    "id": "PSI-20:row18",
+    "investigation": "PSI-20",
+    "acronym": "ACME BRE",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": [
+      25.0,
+      34.0,
+      40.0
+    ],
+    "o2_pct_range": [
+      25.0,
+      40.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 13.0,
+    "note": null,
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "note": "The table row has no summary note.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "row": 18
+    },
+    "doi": "10.60555/vb93-3y72",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "extra": {
+      "date": "2021 Jan 28",
+      "burner_size_mm": 50.0
+    }
+  },
+  {
+    "id": "PSI-21:row1",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "40% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 10.0,
+    "note": "Test Day - includes the year as the first two digits followed by the 3-digit day of the year (where any late-hour transition to the next day is neglected). MFC - identifies the maximum flow rate of the specified ACME Mass Flow Controller (MFC) in slpm on a nitrogen basis. Fuel conc. - (as diluted with nitrogen on a volume basis) was varied between tests and sometimes during tests where the listing here accounts for both. However, it does not account for extinction that sometimes occurred before the flame fully reached the lowest concentration. Flames ignited is the number ignited on that test day.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 1
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "30%-40%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "17319"
+    }
+  },
+  {
+    "id": "PSI-21:row2",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "40% CH5",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 5.0,
+    "note": "Fuel concentration range, not oxygen concentration: 30%-40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 2
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "30%-40%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "17324"
+    }
+  },
+  {
+    "id": "PSI-21:row3",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "40% CH6",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 8.0,
+    "note": "Fuel concentration range, not oxygen concentration: 40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 3
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "40%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "17342"
+    }
+  },
+  {
+    "id": "PSI-21:row4",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "40% CH7",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 3.0,
+    "note": "Fuel concentration range, not oxygen concentration: 30%-40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 4
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "30%-40%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "17356"
+    }
+  },
+  {
+    "id": "PSI-21:row5",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "40% CH8",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 9.0,
+    "note": "Fuel concentration range, not oxygen concentration: 25%-40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 5
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "25%-40%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18003"
+    }
+  },
+  {
+    "id": "PSI-21:row6",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "40% CH9",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 7.0,
+    "note": "Fuel concentration range, not oxygen concentration: 30%-40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 6
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "30%-40%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18005"
+    }
+  },
+  {
+    "id": "PSI-21:row7",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "40% CH10",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 8.0,
+    "note": "Fuel concentration range, not oxygen concentration: 25%-40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 7
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "25%-40%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18008"
+    }
+  },
+  {
+    "id": "PSI-21:row8",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "40% CH11",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 14.0,
+    "note": "Fuel concentration range, not oxygen concentration: 25%-40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 8
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "25%-40%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18011"
+    }
+  },
+  {
+    "id": "PSI-21:row9",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "40% CH12",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 3.0,
+    "note": "Fuel concentration range, not oxygen concentration: 30%-40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 9
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "30%-40%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18022"
+    }
+  },
+  {
+    "id": "PSI-21:row10",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "40% CH13",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 16.0,
+    "note": "Fuel concentration range, not oxygen concentration: 25%-40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 10
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "25%-40%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18026"
+    }
+  },
+  {
+    "id": "PSI-21:row11",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "40% CH14",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 13.0,
+    "note": "Fuel concentration range, not oxygen concentration: 30%-40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 11
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "30%-40%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18032"
+    }
+  },
+  {
+    "id": "PSI-21:row12",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "100% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 8.0,
+    "note": "Fuel concentration range, not oxygen concentration: 50%-80%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 12
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "50%-80%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.05,
+      "test_day": "18039"
+    }
+  },
+  {
+    "id": "PSI-21:row13",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "100% CH5",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 10.0,
+    "note": "Fuel concentration range, not oxygen concentration: 50%-100%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 13
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "50%-100%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.05,
+      "test_day": "18043"
+    }
+  },
+  {
+    "id": "PSI-21:row14",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "100% CH6",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 16.0,
+    "note": "Fuel concentration range, not oxygen concentration: 30%-40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 14
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "30%-40%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.02,
+      "test_day": "18053"
+    }
+  },
+  {
+    "id": "PSI-21:row15",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 3.0,
+    "note": "Fuel concentration range, not oxygen concentration: 80%-100%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 15
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "80%-100%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18145"
+    }
+  },
+  {
+    "id": "PSI-21:row16",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "100% C2H5",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 2.0,
+    "note": "Fuel concentration range, not oxygen concentration: 100%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 16
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "100%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18151"
+    }
+  },
+  {
+    "id": "PSI-21:row17",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "100% C2H6",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 9.0,
+    "note": "Fuel concentration range, not oxygen concentration: 80%-100%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 17
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "80%-100%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18177"
+    }
+  },
+  {
+    "id": "PSI-21:row18",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "100% C2H7",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 14.0,
+    "note": "Fuel concentration range, not oxygen concentration: 60%-100%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 18
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "60%-100%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18186"
+    }
+  },
+  {
+    "id": "PSI-21:row19",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "100% C2H8",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 10.0,
+    "note": "Fuel concentration range, not oxygen concentration: 50%-60%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 19
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "50%-60%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18192"
+    }
+  },
+  {
+    "id": "PSI-21:row20",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "100% C2H9",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 16.0,
+    "note": "Fuel concentration range, not oxygen concentration: 40%-100%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 20
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "40%-100%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18199"
+    }
+  },
+  {
+    "id": "PSI-21:row21",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "100% C2H10",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 13.0,
+    "note": "Fuel concentration range, not oxygen concentration: 100%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 21
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "100%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.05,
+      "test_day": "18214"
+    }
+  },
+  {
+    "id": "PSI-21:row22",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "100% C2H11",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 18.0,
+    "note": "Fuel concentration range, not oxygen concentration: 80%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 22
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "80%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.05,
+      "test_day": "18218"
+    }
+  },
+  {
+    "id": "PSI-21:row23",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "50% C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 16.0,
+    "note": "Fuel concentration range, not oxygen concentration: 50%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 23
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "50%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18235"
+    }
+  },
+  {
+    "id": "PSI-21:row24",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "50% C2H5",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 14.0,
+    "note": "Fuel concentration range, not oxygen concentration: 40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 24
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "40%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.1,
+      "test_day": "18239"
+    }
+  },
+  {
+    "id": "PSI-21:row25",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "50% C2H6",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 6.0,
+    "note": "Fuel concentration range, not oxygen concentration: 10%-20%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 25
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "10%-20%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.2,
+      "test_day": "18241"
+    }
+  },
+  {
+    "id": "PSI-21:row26",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "50% C2H7",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 12.0,
+    "note": "Fuel concentration range, not oxygen concentration: 10%-30%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 26
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "10%-30%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.2,
+      "test_day": "18249"
+    }
+  },
+  {
+    "id": "PSI-21:row27",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "50% C2H8",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 14.0,
+    "note": "Fuel concentration range, not oxygen concentration: 15%-30%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 27
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "15%-30%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.2,
+      "test_day": "18253"
+    }
+  },
+  {
+    "id": "PSI-21:row28",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "50% C2H9",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 15.0,
+    "note": "Fuel concentration range, not oxygen concentration: 15%-20%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 28
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "15%-20%",
+      "fuel_mfc_slpm": 0.1,
+      "n2_mfc_slpm": 0.2,
+      "test_day": "18257"
+    }
+  },
+  {
+    "id": "PSI-21:row29",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "30% C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 9.0,
+    "note": "Fuel concentration range, not oxygen concentration: 0%-30%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 29
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "0%-30%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.2,
+      "test_day": "21041"
+    }
+  },
+  {
+    "id": "PSI-21:row30",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "30% C2H5",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 16.0,
+    "note": "Fuel concentration range, not oxygen concentration: 15%-20%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 30
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "15%-20%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.2,
+      "test_day": "21046"
+    }
+  },
+  {
+    "id": "PSI-21:row31",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "40% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 16.0,
+    "note": "Fuel concentration range, not oxygen concentration: 20%-40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 31
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "20%-40%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.2,
+      "test_day": "21050"
+    }
+  },
+  {
+    "id": "PSI-21:row32",
+    "investigation": "PSI-21",
+    "acronym": "ACME CLD Flame",
+    "fuel_phase": "gas",
+    "material": "40% CH5",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 11.0,
+    "note": "Fuel concentration range, not oxygen concentration: 30%-40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "row": 32
+    },
+    "doi": "10.60555/23e1-9950",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "extra": {
+      "fuel_concentration_range": "30%-40%",
+      "fuel_mfc_slpm": 0.2,
+      "n2_mfc_slpm": 0.2,
+      "test_day": "21062"
+    }
+  },
+  {
+    "id": "PSI-22:row1",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "100% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 10.0,
+    "note": "Test day is formatted YYDDD where YY identifies year and DDD identifies day of year (GMT).",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 1
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "100%",
+      "test_type": "First round of tests with coflow burner",
+      "test_day": "18073.0",
+      "mesh_polarity": "negative"
+    }
+  },
+  {
+    "id": "PSI-22:row2",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "100% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 10.0,
+    "note": "Mesh polarity refers to the polarity of the high-voltage power supply and the copper electrode relative to the burner.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 2
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "70%",
+      "test_type": "First round of tests with coflow burner",
+      "test_day": "18078.0",
+      "mesh_polarity": "negative"
+    }
+  },
+  {
+    "id": "PSI-22:row3",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "Fuel Conc. (diluted with nitrogen on a volume basis) was varied between tests, but typically matched the bottle. The list only accounts for flames ignited.",
+    "missing_reasons": {
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 3
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "100%",
+      "test_type": null,
+      "test_day": null,
+      "mesh_polarity": null
+    }
+  },
+  {
+    "id": "PSI-22:row4",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "40% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 8.0,
+    "note": "Flames Ignited is the number ignited on that day (neglecting the day change on ISS).",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 4
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "40%",
+      "test_type": "First round of tests with coflow burner",
+      "test_day": "18080.0",
+      "mesh_polarity": "negative"
+    }
+  },
+  {
+    "id": "PSI-22:row5",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 10.0,
+    "note": "Fuel concentration, not oxygen concentration: 80%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 5
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "80%",
+      "test_type": "First round of tests with coflow burner",
+      "test_day": "18087.0",
+      "mesh_polarity": "negative"
+    }
+  },
+  {
+    "id": "PSI-22:row6",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "Fuel concentration, not oxygen concentration: 100%.",
+    "missing_reasons": {
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 6
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "100%",
+      "test_type": null,
+      "test_day": null,
+      "mesh_polarity": null
+    }
+  },
+  {
+    "id": "PSI-22:row7",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "30% C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 11.0,
+    "note": "Fuel concentration, not oxygen concentration: 30%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 7
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "30%",
+      "test_type": "First round of tests with coflow burner",
+      "test_day": "18092.0",
+      "mesh_polarity": "negative"
+    }
+  },
+  {
+    "id": "PSI-22:row8",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "30% C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 10.0,
+    "note": "Fuel concentration, not oxygen concentration: 30%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 8
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "30%",
+      "test_type": "First round of tests with coflow burner",
+      "test_day": "18095.0",
+      "mesh_polarity": "positive"
+    }
+  },
+  {
+    "id": "PSI-22:row9",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "40% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 8.0,
+    "note": "Fuel concentration, not oxygen concentration: 40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 9
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "40%",
+      "test_type": "First round of tests with coflow burner",
+      "test_day": "18102.0",
+      "mesh_polarity": "positive"
+    }
+  },
+  {
+    "id": "PSI-22:row10",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "40% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 13.0,
+    "note": "Fuel concentration, not oxygen concentration: 40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 10
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "40%",
+      "test_type": "First round of tests with coflow burner",
+      "test_day": "18106.0",
+      "mesh_polarity": "positive"
+    }
+  },
+  {
+    "id": "PSI-22:row11",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "100% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 15.0,
+    "note": "Fuel concentration, not oxygen concentration: 100%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 11
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "100%",
+      "test_type": "First round of tests with coflow burner",
+      "test_day": "18113.0",
+      "mesh_polarity": "positive"
+    }
+  },
+  {
+    "id": "PSI-22:row12",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "100% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 13.0,
+    "note": "Fuel concentration, not oxygen concentration: 70%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 12
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "70%",
+      "test_type": "First round of tests with coflow burner",
+      "test_day": "18130.0",
+      "mesh_polarity": "positive"
+    }
+  },
+  {
+    "id": "PSI-22:row13",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 12.0,
+    "note": "Fuel concentration, not oxygen concentration: 80%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 13
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "80%",
+      "test_type": "First round of tests with coflow burner",
+      "test_day": "18137.0",
+      "mesh_polarity": "positive"
+    }
+  },
+  {
+    "id": "PSI-22:row14",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "Fuel concentration, not oxygen concentration: 100%.",
+    "missing_reasons": {
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 14
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "100%",
+      "test_type": null,
+      "test_day": null,
+      "mesh_polarity": null
+    }
+  },
+  {
+    "id": "PSI-22:row15",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "40% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 11.0,
+    "note": "Fuel concentration, not oxygen concentration: 40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 15
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "40%",
+      "test_type": "Second round of tests with gas-jet burner",
+      "test_day": "18269.0",
+      "mesh_polarity": "negative"
+    }
+  },
+  {
+    "id": "PSI-22:row16",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "30% C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 11.0,
+    "note": "Fuel concentration, not oxygen concentration: 30%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 16
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "30%",
+      "test_type": "Second round of tests with gas-jet burner",
+      "test_day": "18274.0",
+      "mesh_polarity": "negative"
+    }
+  },
+  {
+    "id": "PSI-22:row17",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "100% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 13.0,
+    "note": "Fuel concentration, not oxygen concentration: 70%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 17
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "70%",
+      "test_type": "Second round of tests with gas-jet burner",
+      "test_day": "18282.0",
+      "mesh_polarity": "negative"
+    }
+  },
+  {
+    "id": "PSI-22:row18",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "Fuel concentration, not oxygen concentration: 100%.",
+    "missing_reasons": {
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 18
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "100%",
+      "test_type": null,
+      "test_day": null,
+      "mesh_polarity": null
+    }
+  },
+  {
+    "id": "PSI-22:row19",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 10.0,
+    "note": "Fuel concentration, not oxygen concentration: 100%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 19
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "100%",
+      "test_type": "Second round of tests with gas-jet burner",
+      "test_day": "18285.0",
+      "mesh_polarity": "negative"
+    }
+  },
+  {
+    "id": "PSI-22:row20",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 11.0,
+    "note": "Fuel concentration, not oxygen concentration: 80%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 20
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "80%",
+      "test_type": "Second round of tests with gas-jet burner",
+      "test_day": "18290.0",
+      "mesh_polarity": "negative"
+    }
+  },
+  {
+    "id": "PSI-22:row21",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "40% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 9.0,
+    "note": "Fuel concentration, not oxygen concentration: 40%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 21
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "40%",
+      "test_type": "Second round of tests with gas-jet burner",
+      "test_day": "18298.0",
+      "mesh_polarity": "positive"
+    }
+  },
+  {
+    "id": "PSI-22:row22",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "30% C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 10.0,
+    "note": "Fuel concentration, not oxygen concentration: 30%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 22
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "30%",
+      "test_type": "Second round of tests with gas-jet burner",
+      "test_day": "18302.0",
+      "mesh_polarity": "positive"
+    }
+  },
+  {
+    "id": "PSI-22:row23",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "100% CH4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 13.0,
+    "note": "Fuel concentration, not oxygen concentration: 70%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 23
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "70%",
+      "test_type": "Second round of tests with gas-jet burner",
+      "test_day": "18312.0",
+      "mesh_polarity": "positive"
+    }
+  },
+  {
+    "id": "PSI-22:row24",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "Fuel concentration, not oxygen concentration: 100%.",
+    "missing_reasons": {
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 24
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "100%",
+      "test_type": null,
+      "test_day": null,
+      "mesh_polarity": null
+    }
+  },
+  {
+    "id": "PSI-22:row25",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 11.0,
+    "note": "Fuel concentration, not oxygen concentration: 25%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 25
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "25%",
+      "test_type": "Second round of tests with gas-jet burner",
+      "test_day": "18319.0",
+      "mesh_polarity": "positive"
+    }
+  },
+  {
+    "id": "PSI-22:row26",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "Fuel concentration, not oxygen concentration: 50%.",
+    "missing_reasons": {
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 26
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "50%",
+      "test_type": null,
+      "test_day": null,
+      "mesh_polarity": null
+    }
+  },
+  {
+    "id": "PSI-22:row27",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "Fuel concentration, not oxygen concentration: 80%.",
+    "missing_reasons": {
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 27
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "80%",
+      "test_type": null,
+      "test_day": null,
+      "mesh_polarity": null
+    }
+  },
+  {
+    "id": "PSI-22:row28",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "Fuel concentration, not oxygen concentration: 100%.",
+    "missing_reasons": {
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 28
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "100%",
+      "test_type": null,
+      "test_day": null,
+      "mesh_polarity": null
+    }
+  },
+  {
+    "id": "PSI-22:row29",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": "100% C2H4",
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 11.0,
+    "note": "Fuel concentration, not oxygen concentration: 25%, 50%, 80%, 100%.",
+    "missing_reasons": {
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 29
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "25%, 50%, 80%, 100%",
+      "test_type": "Second round of tests with gas-jet burner",
+      "test_day": "18319.0",
+      "mesh_polarity": "positive"
+    }
+  },
+  {
+    "id": "PSI-22:row30",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "Fuel concentration, not oxygen concentration: 50%.",
+    "missing_reasons": {
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 30
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "50%",
+      "test_type": null,
+      "test_day": null,
+      "mesh_polarity": null
+    }
+  },
+  {
+    "id": "PSI-22:row31",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "Fuel concentration, not oxygen concentration: 80%.",
+    "missing_reasons": {
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 31
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "80%",
+      "test_type": null,
+      "test_day": null,
+      "mesh_polarity": null
+    }
+  },
+  {
+    "id": "PSI-22:row32",
+    "investigation": "PSI-22",
+    "acronym": "ACME E-FIELD Flames",
+    "fuel_phase": "gas",
+    "material": null,
+    "o2_pct_values": null,
+    "o2_pct_range": null,
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": null,
+    "note": "Fuel concentration, not oxygen concentration: 100%.",
+    "missing_reasons": {
+      "material": "The summary row has no usable fuel/material description.",
+      "o2_pct_values": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "count": "The table row has no usable test/count value.",
+      "o2_pct_range": "The table row does not report an oxygen concentration; fuel concentration is not treated as O2.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "row": 32
+    },
+    "doi": "10.60555/se5a-8c73",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "extra": {
+      "fuel_concentration": "100%",
+      "test_type": null,
+      "test_day": null,
+      "mesh_polarity": null
+    }
+  },
+  {
+    "id": "PSI-23:row1",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "50% C2H4 with N2",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 13.0,
+    "note": "*Test Day is formatted YYDDD where YY identfies year and DDD identifies day of year (GMT).",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 1
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~21% O2 with N2",
+      "test_type": "First round of tests with nitrogen-diluted fuel and oxygen",
+      "test_day": "19254"
+    }
+  },
+  {
+    "id": "PSI-23:row2",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "50% C2H4 with N3",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 16.0,
+    "note": "*Atmosphere is ~1 atm but pressure increases and O2% drops with vitiation.",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 2
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~21% O2 with N3",
+      "test_type": "First round of tests with nitrogen-diluted fuel and oxygen",
+      "test_day": "19256"
+    }
+  },
+  {
+    "id": "PSI-23:row3",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "45% CH4 with N2",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 9.0,
+    "note": "*Flames Ignited is the number ignited on that day (neglecting the day change on ISS).",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 3
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~21% O2 with N4",
+      "test_type": "First round of tests with nitrogen-diluted fuel and oxygen",
+      "test_day": "19304"
+    }
+  },
+  {
+    "id": "PSI-23:row4",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "45% CH4 with N3",
+    "o2_pct_values": [
+      30.0
+    ],
+    "o2_pct_range": [
+      30.0,
+      30.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 21.0,
+    "note": "~30% O2 with N2",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 4
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~30% O2 with N2",
+      "test_type": "First round of tests with nitrogen-diluted fuel and oxygen",
+      "test_day": "19308"
+    }
+  },
+  {
+    "id": "PSI-23:row5",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "100% H2",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 10.0,
+    "note": "~21% O2 with N2",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 5
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~21% O2 with N2",
+      "test_type": "First round of tests with nitrogen-diluted fuel and oxygen",
+      "test_day": "19352"
+    }
+  },
+  {
+    "id": "PSI-23:row6",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "44.4% H2 with CH4",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 17.0,
+    "note": "~21% O2 with N3",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 6
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~21% O2 with N3",
+      "test_type": "First round of tests with nitrogen-diluted fuel and oxygen",
+      "test_day": "20006"
+    }
+  },
+  {
+    "id": "PSI-23:row7",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "66.7% H2 with CH4",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 22.0,
+    "note": "~21% O2 with N4",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 7
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~21% O2 with N4",
+      "test_type": "First round of tests with nitrogen-diluted fuel and oxygen",
+      "test_day": "20013"
+    }
+  },
+  {
+    "id": "PSI-23:row8",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "100% H2",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 16.0,
+    "note": "~21% O2 with N5",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 8
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~21% O2 with N5",
+      "test_type": "First round of tests with nitrogen-diluted fuel and oxygen",
+      "test_day": "20024"
+    }
+  },
+  {
+    "id": "PSI-23:row9",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "50% C2H4 with N2",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 21.0,
+    "note": "~21% O2 with N6",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 9
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~21% O2 with N6",
+      "test_type": "First round of tests with nitrogen-diluted fuel and oxygen",
+      "test_day": "20029"
+    }
+  },
+  {
+    "id": "PSI-23:row10",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "25% H2, 20% CH4, with He",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 7.0,
+    "note": "~21% O2 with He",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 10
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~21% O2 with He",
+      "test_type": "First round of tests with nitrogen-diluted fuel and oxygen",
+      "test_day": "20132"
+    }
+  },
+  {
+    "id": "PSI-23:row11",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "20% H2, 25% CH4, with He",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 11.0,
+    "note": "~21% O2 with He",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 11
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~21% O2 with He",
+      "test_type": "Second round of tests with helium-diluted fuel and oxygen",
+      "test_day": "20136"
+    }
+  },
+  {
+    "id": "PSI-23:row12",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "30% H2, 15% CH4, with He",
+    "o2_pct_values": [
+      30.0
+    ],
+    "o2_pct_range": [
+      30.0,
+      30.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 17.0,
+    "note": "~30% O2 with He",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 12
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~30% O2 with He",
+      "test_type": "Second round of tests with helium-diluted fuel and oxygen",
+      "test_day": "20142"
+    }
+  },
+  {
+    "id": "PSI-23:row13",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "45% H2 with He",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 9.0,
+    "note": "~30% and ~21% O2 with He",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 13
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~30% and ~21% O2 with He",
+      "test_type": "Second round of tests with helium-diluted fuel and oxygen",
+      "test_day": "20155"
+    }
+  },
+  {
+    "id": "PSI-23:row14",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "45% CH4 with He",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 12.0,
+    "note": "~30% and ~21% O2 with He",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 14
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~30% and ~21% O2 with He",
+      "test_type": "Second round of tests with helium-diluted fuel and oxygen",
+      "test_day": "20160"
+    }
+  },
+  {
+    "id": "PSI-23:row15",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "20% C2H4 with He",
+    "o2_pct_values": [
+      30.0
+    ],
+    "o2_pct_range": [
+      30.0,
+      30.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 11.0,
+    "note": "~30% O2 with He",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 15
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~30% O2 with He",
+      "test_type": "Second round of tests with helium-diluted fuel and oxygen",
+      "test_day": "20164"
+    }
+  },
+  {
+    "id": "PSI-23:row16",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "25% C2H4 with He",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 20.0,
+    "note": "~30% and ~21% O2 with He",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 16
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~30% and ~21% O2 with He",
+      "test_type": "Second round of tests with helium-diluted fuel and oxygen",
+      "test_day": "20170"
+    }
+  },
+  {
+    "id": "PSI-23:row17",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "30% C2H4 with He",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 23.0,
+    "note": "~30% and ~21% O2 with He",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 17
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~30% and ~21% O2 with He",
+      "test_type": "Second round of tests with helium-diluted fuel and oxygen",
+      "test_day": "20176"
+    }
+  },
+  {
+    "id": "PSI-23:row18",
+    "investigation": "PSI-23",
+    "acronym": "ACME s-Flame",
+    "fuel_phase": "gas",
+    "material": "35% H2 with He",
+    "o2_pct_values": [
+      21.0
+    ],
+    "o2_pct_range": [
+      21.0,
+      21.0
+    ],
+    "pressure_psi_values": null,
+    "pressure_psi_range": null,
+    "flow_cm_s_values": null,
+    "flow_cm_s_range": null,
+    "count": 21.0,
+    "note": "~30% and ~21% O2 with He",
+    "missing_reasons": {
+      "pressure_psi_values": "The table row does not report a pressure value.",
+      "flow_cm_s_values": "The table row does not report a flow speed in cm/s.",
+      "pressure_psi_range": "The table row does not report a pressure value.",
+      "flow_cm_s_range": "The table row does not report a flow speed in cm/s."
+    },
+    "source": {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "row": 18
+    },
+    "doi": "10.60555/k57n-p030",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "extra": {
+      "atmosphere_raw": "~30% and ~21% O2 with He",
+      "test_type": "Second round of tests with helium-diluted fuel and oxygen",
+      "test_day": "20190"
+    }
+  },
+  {
+    "id": "PSI-68:row1",
+    "investigation": "PSI-68",
+    "acronym": "FLEX-2",
+    "fuel_phase": "liquid",
+    "material": "IsoOctane (pure)",
+    "o2_pct_values": [
+      17.0,
+      21.0,
+      25.0,
+      30.0
+    ],
+    "o2_pct_range": [
+      17.0,
+      30.0
+    ],
+    "pressure_psi_values": [
+      7.35,
+      14.7,
+      22.04,
+      29.39,
+      44.09
+    ],
+    "pressure_psi_range": [
+      7.35,
+      44.09
+    ],
+    "flow_cm_s_values": [
+      0.1,
+      5.0
+    ],
+    "flow_cm_s_range": [
+      0.1,
+      5.0
+    ],
+    "count": null,
+    "note": "Ambient gas mixture: O2/N2 or O2/He; initial droplet diameter: 1.5 - 5 mm; ambient temperature: 25 °C.",
+    "missing_reasons": {
+      "count": "The table row has no usable test/count value."
+    },
+    "source": {
+      "file": "PSI-68_Experimental table_Flex2.csv",
+      "row": 1
+    },
+    "doi": "10.60555/byp8-h018",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+    "extra": {
+      "ambient_gas_mixture": "O2/N2 or O2/He",
+      "droplet_diameter_raw": "1.5 - 5",
+      "ambient_temperature_c": 25.0
+    }
+  },
+  {
+    "id": "PSI-68:row2",
+    "investigation": "PSI-68",
+    "acronym": "FLEX-2",
+    "fuel_phase": "liquid",
+    "material": "n-Octane (pure)",
+    "o2_pct_values": [
+      17.0,
+      21.0,
+      25.0,
+      30.0
+    ],
+    "o2_pct_range": [
+      17.0,
+      30.0
+    ],
+    "pressure_psi_values": [
+      7.35,
+      14.7,
+      22.04,
+      29.39,
+      44.09
+    ],
+    "pressure_psi_range": [
+      7.35,
+      44.09
+    ],
+    "flow_cm_s_values": [
+      0.1,
+      5.0
+    ],
+    "flow_cm_s_range": [
+      0.1,
+      5.0
+    ],
+    "count": null,
+    "note": "Ambient gas mixture: O2/N2 or O2/He; initial droplet diameter: 1.5 - 5 mm; ambient temperature: 25 °C.",
+    "missing_reasons": {
+      "count": "The table row has no usable test/count value."
+    },
+    "source": {
+      "file": "PSI-68_Experimental table_Flex2.csv",
+      "row": 2
+    },
+    "doi": "10.60555/byp8-h018",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+    "extra": {
+      "ambient_gas_mixture": "O2/N2 or O2/He",
+      "droplet_diameter_raw": "1.5 - 5",
+      "ambient_temperature_c": 25.0
+    }
+  },
+  {
+    "id": "PSI-68:row3",
+    "investigation": "PSI-68",
+    "acronym": "FLEX-2",
+    "fuel_phase": "liquid",
+    "material": "Heptane (pure)",
+    "o2_pct_values": [
+      17.0,
+      21.0,
+      25.0,
+      30.0
+    ],
+    "o2_pct_range": [
+      17.0,
+      30.0
+    ],
+    "pressure_psi_values": [
+      7.35,
+      14.7,
+      22.04,
+      29.39,
+      44.09
+    ],
+    "pressure_psi_range": [
+      7.35,
+      44.09
+    ],
+    "flow_cm_s_values": [
+      0.1,
+      5.0
+    ],
+    "flow_cm_s_range": [
+      0.1,
+      5.0
+    ],
+    "count": null,
+    "note": "Ambient gas mixture: O2/N2 or O2/He; initial droplet diameter: 1.5 - 5 mm; ambient temperature: 25 °C.",
+    "missing_reasons": {
+      "count": "The table row has no usable test/count value."
+    },
+    "source": {
+      "file": "PSI-68_Experimental table_Flex2.csv",
+      "row": 3
+    },
+    "doi": "10.60555/byp8-h018",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+    "extra": {
+      "ambient_gas_mixture": "O2/N2 or O2/He",
+      "droplet_diameter_raw": "1.5 - 5",
+      "ambient_temperature_c": 25.0
+    }
+  },
+  {
+    "id": "PSI-68:row4",
+    "investigation": "PSI-68",
+    "acronym": "FLEX-2",
+    "fuel_phase": "liquid",
+    "material": "Decane (pure)",
+    "o2_pct_values": [
+      17.0,
+      21.0,
+      25.0,
+      30.0
+    ],
+    "o2_pct_range": [
+      17.0,
+      30.0
+    ],
+    "pressure_psi_values": [
+      7.35,
+      14.7,
+      22.04,
+      29.39,
+      44.09
+    ],
+    "pressure_psi_range": [
+      7.35,
+      44.09
+    ],
+    "flow_cm_s_values": [
+      0.1,
+      5.0
+    ],
+    "flow_cm_s_range": [
+      0.1,
+      5.0
+    ],
+    "count": null,
+    "note": "Ambient gas mixture: O2/N2 or O2/He; initial droplet diameter: 1.5 - 5 mm; ambient temperature: 25 °C.",
+    "missing_reasons": {
+      "count": "The table row has no usable test/count value."
+    },
+    "source": {
+      "file": "PSI-68_Experimental table_Flex2.csv",
+      "row": 4
+    },
+    "doi": "10.60555/byp8-h018",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+    "extra": {
+      "ambient_gas_mixture": "O2/N2 or O2/He",
+      "droplet_diameter_raw": "1.5 - 5",
+      "ambient_temperature_c": 25.0
+    }
+  },
+  {
+    "id": "PSI-68:row5",
+    "investigation": "PSI-68",
+    "acronym": "FLEX-2",
+    "fuel_phase": "liquid",
+    "material": "Ethanol (pure)",
+    "o2_pct_values": [
+      17.0,
+      21.0,
+      25.0,
+      30.0
+    ],
+    "o2_pct_range": [
+      17.0,
+      30.0
+    ],
+    "pressure_psi_values": [
+      7.35,
+      14.7,
+      22.04,
+      29.39,
+      44.09
+    ],
+    "pressure_psi_range": [
+      7.35,
+      44.09
+    ],
+    "flow_cm_s_values": [
+      0.1,
+      5.0
+    ],
+    "flow_cm_s_range": [
+      0.1,
+      5.0
+    ],
+    "count": null,
+    "note": "Ambient gas mixture: O2/N2 or O2/He; initial droplet diameter: 1.5 - 5 mm; ambient temperature: 25 °C.",
+    "missing_reasons": {
+      "count": "The table row has no usable test/count value."
+    },
+    "source": {
+      "file": "PSI-68_Experimental table_Flex2.csv",
+      "row": 5
+    },
+    "doi": "10.60555/byp8-h018",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+    "extra": {
+      "ambient_gas_mixture": "O2/N2 or O2/He",
+      "droplet_diameter_raw": "1.5 - 5",
+      "ambient_temperature_c": 25.0
+    }
+  },
+  {
+    "id": "PSI-68:row6",
+    "investigation": "PSI-68",
+    "acronym": "FLEX-2",
+    "fuel_phase": "liquid",
+    "material": "Propanol (95%) Glycerol (5%) (mixture)",
+    "o2_pct_values": [
+      17.0,
+      21.0,
+      25.0,
+      30.0
+    ],
+    "o2_pct_range": [
+      17.0,
+      30.0
+    ],
+    "pressure_psi_values": [
+      7.35,
+      14.7,
+      22.04,
+      29.39,
+      44.09
+    ],
+    "pressure_psi_range": [
+      7.35,
+      44.09
+    ],
+    "flow_cm_s_values": [
+      0.1,
+      5.0
+    ],
+    "flow_cm_s_range": [
+      0.1,
+      5.0
+    ],
+    "count": null,
+    "note": "Ambient gas mixture: O2/N2 or O2/He; initial droplet diameter: 1.5 - 5 mm; ambient temperature: 25 °C.",
+    "missing_reasons": {
+      "count": "The table row has no usable test/count value."
+    },
+    "source": {
+      "file": "PSI-68_Experimental table_Flex2.csv",
+      "row": 6
+    },
+    "doi": "10.60555/byp8-h018",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+    "extra": {
+      "ambient_gas_mixture": "O2/N2 or O2/He",
+      "droplet_diameter_raw": "1.5 - 5",
+      "ambient_temperature_c": 25.0
+    }
+  },
+  {
+    "id": "PSI-68:row7",
+    "investigation": "PSI-68",
+    "acronym": "FLEX-2",
+    "fuel_phase": "liquid",
+    "material": "Heptane (50%) IsoOctane (50%) (mixture)",
+    "o2_pct_values": [
+      17.0,
+      21.0,
+      25.0,
+      30.0
+    ],
+    "o2_pct_range": [
+      17.0,
+      30.0
+    ],
+    "pressure_psi_values": [
+      7.35,
+      14.7,
+      22.04,
+      29.39,
+      44.09
+    ],
+    "pressure_psi_range": [
+      7.35,
+      44.09
+    ],
+    "flow_cm_s_values": [
+      0.1,
+      5.0
+    ],
+    "flow_cm_s_range": [
+      0.1,
+      5.0
+    ],
+    "count": null,
+    "note": "Ambient gas mixture: O2/N2 or O2/He; initial droplet diameter: 1.5 - 5 mm; ambient temperature: 25 °C.",
+    "missing_reasons": {
+      "count": "The table row has no usable test/count value."
+    },
+    "source": {
+      "file": "PSI-68_Experimental table_Flex2.csv",
+      "row": 7
+    },
+    "doi": "10.60555/byp8-h018",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+    "extra": {
+      "ambient_gas_mixture": "O2/N2 or O2/He",
+      "droplet_diameter_raw": "1.5 - 5",
+      "ambient_temperature_c": 25.0
+    }
+  },
+  {
+    "id": "PSI-68:row8",
+    "investigation": "PSI-68",
+    "acronym": "FLEX-2",
+    "fuel_phase": "liquid",
+    "material": "Propanol (80%) Glycerol (20%) (mixture)",
+    "o2_pct_values": [
+      17.0,
+      21.0,
+      25.0,
+      30.0
+    ],
+    "o2_pct_range": [
+      17.0,
+      30.0
+    ],
+    "pressure_psi_values": [
+      7.35,
+      14.7,
+      22.04,
+      29.39,
+      44.09
+    ],
+    "pressure_psi_range": [
+      7.35,
+      44.09
+    ],
+    "flow_cm_s_values": [
+      0.1,
+      5.0
+    ],
+    "flow_cm_s_range": [
+      0.1,
+      5.0
+    ],
+    "count": null,
+    "note": "Ambient gas mixture: O2/N2 or O2/He; initial droplet diameter: 1.5 - 5 mm; ambient temperature: 25 °C.",
+    "missing_reasons": {
+      "count": "The table row has no usable test/count value."
+    },
+    "source": {
+      "file": "PSI-68_Experimental table_Flex2.csv",
+      "row": 8
+    },
+    "doi": "10.60555/byp8-h018",
+    "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+    "extra": {
+      "ambient_gas_mixture": "O2/N2 or O2/He",
+      "droplet_diameter_raw": "1.5 - 5",
+      "ambient_temperature_c": 25.0
+    }
+  }
+]
