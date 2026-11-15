@@ -52,7 +52,8 @@ export const Footage: React.FC<{
   rate?: number
   keys: Array<{ f: number; scale: number; x: number; y: number }> // f = local frame
   dim?: number
-}> = ({ src, startFrom, rate = 1, keys, dim = 0 }) => {
+  blur?: number
+}> = ({ src, startFrom, rate = 1, keys, dim = 0, blur = 0 }) => {
   const frame = useCurrentFrame()
   const fs = keys.map((k) => k.f)
   const opts = { extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const, easing: easeInOut }
@@ -67,7 +68,7 @@ export const Footage: React.FC<{
   const ty = H / 2 - cy * scale
   return (
     <AbsoluteFill style={{ backgroundColor: C.bg, overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', width: W, height: H, transformOrigin: '0 0', transform: `translate(${tx}px, ${ty}px) scale(${scale})` }}>
+      <div style={{ position: 'absolute', width: W, height: H, transformOrigin: '0 0', transform: `translate(${tx}px, ${ty}px) scale(${scale})`, filter: blur ? `blur(${blur}px)` : undefined }}>
         <OffthreadVideo src={staticFile(src)} startFrom={Math.round(startFrom * 30)} playbackRate={rate} muted style={{ width: W, height: H }} />
       </div>
       {dim > 0 && <AbsoluteFill style={{ backgroundColor: `rgba(3,5,10,${dim})` }} />}

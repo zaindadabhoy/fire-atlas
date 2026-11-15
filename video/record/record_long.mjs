@@ -1,0 +1,237 @@
+// Records FIRE ATLAS footage for the long (local presentation) video via Chrome DevTools screencast.
+// Each clip -> video/long/footage/<name>.mp4 (1920x1080, 30 fps CFR).
+// Usage (from video/record):  node record_long.mjs [baseUrl] [clipName...]
+import { chromium } from '../../app/node_modules/playwright/index.mjs'
+import { mkdirSync, writeFileSync, rmSync, existsSync } from 'node:fs'
+import { execFileSync } from 'node:child_process'
+import { join, resolve } from 'node:path'
+
+const BASE = process.argv[2] ?? 'https://fire-atlas-tau.vercel.app'
+const ONLY = process.argv.slice(3)
+const OUT = resolve('../long/footage')
+const FFMPEG = process.env.FFMPEG_PATH ?? 'ffmpeg'
+const CHROME = process.env.CHROME_PATH
+mkdirSync(OUT, { recursive: true })
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
+
+const CURSOR_JS = `
+(() => {
+  if (window.__cursor) return
+  const c = document.createElement('div')
+  c.style.cssText = 'position:fixed;left:0;top:0;width:22px;height:22px;margin:-11px 0 0 -11px;border:2px solid #fff;border-radius:50%;background:rgba(255,255,255,.18);box-shadow:0 0 0 1px rgba(0,0,0,.6),0 0 18px rgba(255,255,255,.35);pointer-events:none;z-index:2147483647;transition:transform .12s ease, background .12s ease;transform:translate(-100px,-100px)'
+  document.documentElement.appendChild(c)
+  window.__cursor = c
+  window.addEventListener('mousemove', (e) => { c.style.transform = 'translate(' + e.clientX + 'px,' + e.clientY + 'px)' }, true)
+  window.addEventListener('mousedown', () => { c.style.background = 'rgba(255,90,31,.55)'; c.style.transform += ' scale(.8)' }, true)
+  window.addEventListener('mouseup', () => { c.style.background = 'rgba(255,255,255,.18)' }, true)
+})()`
+
+async function glide(page, from, to, ms = 600) {
+  const steps = Math.max(8, Math.round(ms / 16))
+  for (let i = 1; i <= steps; i += 1) {
+    const t = i / steps
+    const e = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2
+    await page.mouse.move(from[0] + (to[0] - from[0]) * e, from[1] + (to[1] - from[1]) * e)
+    await sleep(ms / steps)
+  }
+}
+
+async function centerOf(page, locator) {
+  const box = await locator.boundingBox()
+  return [box.x + box.width / 2, box.y + box.height / 2]
+}
+
+async function record(name, setup, action) {
+  if (ONLY.length && !ONLY.includes(name)) return
+  const browser = await chromium.launch({ ...(CHROME ? { executablePath: CHROME } : {}), headless: false, args: ['--window-size=1940,1180', '--force-device-scale-factor=1', '--hide-scrollbars', '--disable-features=Translate'] })
+  const context = await browser.newContext({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 })
+  const page = await context.newPage()
+  await page.addInitScript(CURSOR_JS)
+  const frameDir = join(OUT, `_frames_${name}`)
+  if (existsSync(frameDir)) rmSync(frameDir, { recursive: true })
+  mkdirSync(frameDir, { recursive: true })
+  await setup(page)
+  const session = await context.newCDPSession(page)
+  const frames = []
+  session.on('Page.screencastFrame', async (event) => {
+    const file = join(frameDir, `${String(frames.length).padStart(5, '0')}.jpg`)
+    writeFileSync(file, Buffer.from(event.data, 'base64'))
+    frames.push({ file, t: event.metadata.timestamp })
+    session.send('Page.screencastFrameAck', { sessionId: event.sessionId }).catch(() => {})
+  })
+  await session.send('Page.startScreencast', { format: 'jpeg', quality: 92, maxWidth: 1920, maxHeight: 1080, everyNthFrame: 1 })
+  const started = Date.now() / 1000
+  await action(page)
+  const ended = Date.now() / 1000
+  await session.send('Page.stopScreencast')
+  await sleep(300)
+  await browser.close()
+  const lines = ['ffconcat version 1.0']
+  frames.forEach((frame, index) => {
+    const next = index + 1 < frames.length ? frames[index + 1].t : Math.max(frame.t + 1 / 30, ended)
+    lines.push(`file '${frame.file.replace(/\\/g, '/')}'`, `duration ${Math.max(1 / 60, next - frame.t).toFixed(4)}`)
+  })
+  lines.push(`file '${frames[frames.length - 1].file.replace(/\\/g, '/')}'`)
+  const list = join(frameDir, 'list.ffconcat')
+  writeFileSync(list, lines.join('\n'))
+  const out = join(OUT, `${name}.mp4`)
+  execFileSync(FFMPEG, ['-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', list, '-vf', 'fps=30,scale=1920:1080:flags=lanczos,format=yuv420p', '-c:v', 'libx264', '-preset', 'medium', '-crf', '16', out])
+  console.log(`${name}: ${frames.length} frames over ${(ended - started).toFixed(1)} s -> ${out}`)
+  rmSync(frameDir, { recursive: true })
+}
+
+const ATLAS = BASE + '/#/atlas'
+const loadAtlas = async (page) => {
+  await page.goto(ATLAS, { waitUntil: 'networkidle' })
+  await sleep(3500)
+  await page.mouse.move(1900, 140)
+}
+const easeScroll = (page, target, ms) => page.evaluate(async ([target, ms]) => {
+  const start = window.scrollY
+  const t0 = performance.now()
+  await new Promise((done) => {
+    const step = () => {
+      const t = Math.min(1, (performance.now() - t0) / ms)
+      const e = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2
+      window.scrollTo(0, start + (target - start) * e)
+      if (t < 1) requestAnimationFrame(step); else done()
+    }
+    requestAnimationFrame(step)
+  })
+}, [target, ms])
+const scrollToFrac = async (page, frac, ms) => easeScroll(page, await page.evaluate((f) => (document.documentElement.scrollHeight - innerHeight) * f, frac), ms)
+const scrollToEl = async (page, selector, ms) => easeScroll(page, await page.evaluate((s) => { const el = document.querySelector(s); return el ? el.getBoundingClientRect().top + window.scrollY - 70 : window.scrollY }, selector), ms)
+const scrollBy = async (page, by, ms) => easeScroll(page, await page.evaluate((b) => window.scrollY + b, by), ms)
+
+// L1 — landing hero: flame + orbiting tests, gentle pointer parallax
+await record('l1_hero', async (page) => { await page.goto(BASE + '/', { waitUntil: 'networkidle' }); await sleep(3000); await page.mouse.move(960, 540) }, async (page) => {
+  await glide(page, [960, 540], [1300, 380], 3500)
+  await glide(page, [1300, 380], [800, 620], 4000)
+})
+// L2 — scroll story: data -> atlas morph -> the gap
+await record('l2_morph', async (page) => { await page.goto(BASE + '/', { waitUntil: 'networkidle' }); await sleep(3000); await page.mouse.move(1900, 1070) }, async (page) => {
+  await scrollToFrac(page, 0.17, 2500); await sleep(1500)
+  await scrollToFrac(page, 0.34, 4500); await sleep(2500)
+  await scrollToFrac(page, 0.5, 3000); await sleep(4000)
+})
+// L3 — landing finale: flame returns
+await record('l3_finale', async (page) => { await page.goto(BASE + '/', { waitUntil: 'networkidle' }); await sleep(2500); await page.evaluate(() => window.scrollTo(0, (document.documentElement.scrollHeight - innerHeight) * 0.78)); await sleep(1500); await page.mouse.move(1900, 1070) }, async (page) => {
+  await scrollToFrac(page, 1, 4000); await sleep(4000)
+})
+// D1 — dashboard atlas overview with hovers
+await record('d1_atlas', loadAtlas, async (page) => {
+  await sleep(800)
+  await glide(page, [1900, 140], [900, 470], 1500)
+  await sleep(2200)
+  await glide(page, [900, 470], [1640, 410], 1400)
+  await sleep(2200)
+  await glide(page, [1640, 410], [1900, 1060], 900)
+  await sleep(600)
+})
+// D2 — coverage: solids glow
+await record('d2_coverage', loadAtlas, async (page) => {
+  await sleep(600)
+  const chip = page.locator('.layer-chip', { hasText: /^Solid$/ }).first()
+  const target = await centerOf(page, chip)
+  await glide(page, [1900, 140], target, 900)
+  await page.mouse.down(); await page.mouse.up()
+  await sleep(300)
+  await glide(page, target, [1900, 140], 700)
+  await sleep(5000)
+})
+// D3 — 3D towers, solid, orbit
+await record('d3_towers', async (page) => {
+  await loadAtlas(page)
+  await page.locator('.chart-toggle button', { hasText: '3D' }).click(); await sleep(2500)
+  await page.locator('.layer-chip', { hasText: /^Solid$/ }).first().click(); await sleep(1500)
+  await page.mouse.move(1900, 1060)
+}, async (page) => {
+  await page.evaluate(async () => {
+    const gd = document.querySelector('.js-plotly-plot')
+    const plotly = window.__fireAtlasPlotly
+    const start = performance.now()
+    while (true) {
+      const t = Math.min(1, (performance.now() - start) / 8000)
+      const e = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2
+      const angle = -1.88 + e * 1.3
+      await plotly.relayout(gd, { 'scene.camera.eye': { x: 1.9 * Math.cos(angle), y: 1.9 * Math.sin(angle), z: 1.0 - e * 0.25 } })
+      if (t >= 1) break
+      await new Promise((r) => requestAnimationFrame(r))
+    }
+  })
+  await sleep(300)
+})
+// D4 — ask in plain English -> briefing
+await record('d4_ask', loadAtlas, async (page) => {
+  const input = page.locator('#ask-input')
+  const at = await centerOf(page, input)
+  await glide(page, [1900, 140], at, 800)
+  await page.mouse.down(); await page.mouse.up()
+  await input.pressSequentially('Would acrylic panels burn in a lunar rover?', { delay: 45 })
+  await sleep(300)
+  const ask = page.locator('.ask-row button')
+  const askAt = await centerOf(page, ask)
+  await glide(page, at, askAt, 350)
+  await page.mouse.down(); await page.mouse.up()
+  await page.waitForFunction(() => /Verified \d+\/\d+ sentences/.test(document.body.innerText), null, { timeout: 30000 })
+  await sleep(600)
+  await scrollToEl(page, '.insight-drawer', 1600)
+  await sleep(5500)
+})
+// D5 — receipt: NASA's original row
+await record('d5_receipt', async (page) => {
+  await loadAtlas(page)
+  await page.evaluate(() => {
+    const gd = document.querySelector('.js-plotly-plot')
+    const index = gd.data.findIndex((d) => /Self-extinguished · Solid/.test(d.name || ''))
+    const trace = gd.data[index]
+    gd.emit('plotly_click', { points: [{ curveNumber: index, pointNumber: 0, data: trace, customdata: trace.customdata[0] }] })
+  })
+  await sleep(1200)
+  await page.evaluate(() => document.querySelector('.receipt-button')?.scrollIntoView({ block: 'center' }))
+  await sleep(600)
+}, async (page) => {
+  const button = page.locator('.receipt-button')
+  const at = await centerOf(page, button)
+  await glide(page, [1300, 300], at, 900)
+  await page.mouse.down(); await page.mouse.up()
+  await sleep(1200)
+  await glide(page, at, [1900, 1060], 800)
+  await sleep(4500)
+})
+// D6 — insights tab: gravity bounds then readiness
+await record('d6_insights', loadAtlas, async (page) => {
+  const tab = page.locator('.view-tabs button', { hasText: /^Insights$/ })
+  const at = await centerOf(page, tab)
+  await glide(page, [1900, 140], at, 800)
+  await page.mouse.down(); await page.mouse.up()
+  await sleep(600)
+  await glide(page, at, [1900, 1060], 700)
+  await sleep(3500)
+  await scrollToEl(page, '.readiness-wrap', 2200)
+  await sleep(4000)
+})
+// D7 — compare tab
+await record('d7_compare', loadAtlas, async (page) => {
+  const tab = page.locator('.view-tabs button', { hasText: /^Compare$/ })
+  const at = await centerOf(page, tab)
+  await glide(page, [1900, 140], at, 800)
+  await page.mouse.down(); await page.mouse.up()
+  await sleep(1500)
+  await glide(page, at, [1900, 1060], 600)
+  await scrollBy(page, 1500, 3500)
+  await sleep(1200)
+  await scrollBy(page, 900, 2500)
+  await sleep(2000)
+})
+// D8 — data tab: export
+await record('d8_data', loadAtlas, async (page) => {
+  const tab = page.locator('.view-tabs button', { hasText: /^Data$/ })
+  const at = await centerOf(page, tab)
+  await glide(page, [1900, 140], at, 800)
+  await page.mouse.down(); await page.mouse.up()
+  await sleep(1200)
+  const csv = page.locator('button', { hasText: /Download CSV/i }).first()
+  if (await csv.count()) { const c = await centerOf(page, csv); await glide(page, at, c, 900); await sleep(2500) }
+  await sleep(2500)
+})
