@@ -1106,7 +1106,7 @@ function App() {
   return (
     <motion.main className="app-shell" onPointerDownCapture={() => booting && setBooting(false)} initial={reducedMotion ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: reducedMotion ? 0 : 0.5 }}>
       <header className="topbar" id="top">
-        <a className="brand" href="#top" aria-label="Fire Atlas home"><span className="brand-mark" aria-hidden="true">⌖</span><span className="brand-name">FIRE <b>ATLAS</b></span></a>
+        <a className="brand" href="#/" aria-label="Back to the Fire Atlas story"><span className="brand-mark" aria-hidden="true">⌖</span><span className="brand-name">FIRE <b>ATLAS</b></span></a>
         <div className="topbar-caption"><span className="status-dot" /> PSI INDEX · <AnimatedCount value={findings?.summary.total_investigations ?? investigations.length} /> INVESTIGATIONS · <AnimatedCount value={tests.length} /> TESTS</div>
         <div className="topbar-actions"><div className="fact-ticker" aria-live="polite">{activeTickerFact && <button type="button" onClick={() => showFact(activeTickerFact)} aria-label={`Open finding: ${activeTickerFact.text}`}>{activeTickerFact.text}</button>}</div><button className="about-button" type="button" onClick={() => setAboutOpen(true)}>About</button></div>
       </header>

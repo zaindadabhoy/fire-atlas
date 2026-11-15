@@ -16,6 +16,9 @@ The Moon base has almost the same O₂ *partial pressure* as Earth (2.79 vs 3.07
 
 ## What it does
 
+The site opens with a **3D story**: a microgravity flame (the blue sphere a candle becomes without gravity) surrounded by 1,719 particles — one per NASA test — that morph into the atlas as you scroll, revealing the empty lunar habitat envelope. "Open the atlas" enters the full dashboard.
+
+
 | Feature | What you see | Challenge objective |
 |---|---|---|
 | **Combustion atlas** | 1,719 tests on O₂ × pressure, colored by outcome, shaped by fuel phase; stacked tests sized by count; curves of constant O₂ partial pressure; lunar habitat envelope | Targeted discovery |
@@ -60,7 +63,7 @@ cd app && npm install && npm run dev
 node scripts/qa-e2e.mjs http://localhost:5173
 ```
 
-Stack: Vite + React + TypeScript, Plotly.js, Motion · Python (requests, pandas) · Vercel serverless functions · Google Gemini / Groq free tiers.
+Stack: Vite + React + TypeScript, three.js / React Three Fiber, Plotly.js, Motion · Python (requests, pandas) · Vercel serverless functions · Google Gemini / Groq free tiers.
 
 ## Repository map
 

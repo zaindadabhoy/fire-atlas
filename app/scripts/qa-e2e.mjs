@@ -18,7 +18,17 @@ async function run(viewport, label) {
   page.on('requestfailed', (req) => { if (!req.url().includes('fonts.g') && !req.url().includes('/api/parse-question')) errors.push(`requestfailed ${req.url()}`) })
   page.on('response', (res) => { if (res.status() >= 400 && !res.url().includes('/api/')) errors.push(`HTTP ${res.status()} ${res.url()}`) })
 
-  await page.goto(BASE, { waitUntil: 'networkidle' })
+  // Landing: 3D scene + entry into the atlas
+  await page.goto(BASE + '/', { waitUntil: 'networkidle' })
+  await sleep(2500)
+  const canvas = await page.locator('.landing-canvas canvas').count()
+  check(`${label}: landing 3D canvas`, canvas === 1)
+  await page.evaluate(() => window.scrollTo(0, (document.documentElement.scrollHeight - innerHeight) * 0.5)); await sleep(1200)
+  const gap = await page.locator('.story-block.active h2').innerText().catch(() => '')
+  check(`${label}: landing gap section`, /22\.2/.test(gap) && /zero/i.test(gap), gap.replace(/\s+/g, ' ').slice(0, 60))
+  await page.locator('.landing-nav .landing-cta').click(); await sleep(2500)
+  check(`${label}: landing CTA opens atlas`, page.url().includes('#/atlas'))
+  await page.goto(BASE + '/#/atlas', { waitUntil: 'networkidle' })
   await sleep(2500)
   const header = await page.locator('header').innerText()
   check(`${label}: header counts`, /25\s*INVESTIGATIONS/.test(header) && /1,719\s*TESTS/.test(header), header.replace(/\s+/g, ' ').slice(0, 80))
